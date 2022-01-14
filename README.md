@@ -14,54 +14,42 @@
       /></a>
     </p>
     <p>
-    - 🔭 currently working on [Isu-gate](https://github.com/dev-aly3n/isu-gate)
+    - 🔭 currently working on <a href="https://github.com/dev-aly3n/isu-portfolio">Isu-gate</a>
     </p>
     <p>
     - 🌱 currently learning <strong>Jest & React Testing Library</strong>
     </p>
     <p>
-     - 🔨 looking to collaborate on [Isu-portfolio](https://github.com/dev-aly3n/Isu-portfolio)
+      -🤝 looking for help with <a href="https://github.com/dev-aly3n/wikianime">Wikianime</a>
     </p>
     <p>
-      -🤝 looking for help with [Wikianime](https://github.com/dev-aly3n/wikianime)
+     - 📜<strong>My Personal Website</strong>: <a href="https://aly3n.dev">Aly3n.dev</a>
     </p>
-    <p>
-    - 👨‍💻 All of my projects are available at [https://aly3n.dev/projects](https://aly3n.dev/projects)
-    </p>
-    <p>
-     - 💬 Ask me about <strong>React - Next - javaScript</strong>
-    </p>
-    <h3 align="left">Connect with me:</h3>
-    <p align="left">
+    <h3 align="center">Connect with me</h3>
+    <p align="center">
       <a href="https://linkedin.com/in/aly-mohamadi" target="_blank"
         ><img
           align="center"
-          src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+          src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
           alt="aly-mohamadi"
-          height="30"
-          width="30"
       /></a>
       <a
         href="https://wa.me/989152539070?text=Hello%20Aly!%20I%27ve%20reached%20you%20through%20your%20GitHub."
         target="_blank"
         ><img
           align="center"
-          src="https://static.whatsapp.net/rsrc.php/ym/r/36B424nhiL4.svg"
+          src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"
           alt="aly-mohamadi"
-          height="30"
-          width="100"
       /></a>
       <a href="https://t.me/aly3n" target="_blank"
         ><img
           align="center"
-          src="https://telegram.org/img/t_logo.png"
+          src="	https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"
           alt="aly-mohamadi"
-          height="30"
-          width="30"
       /></a>
     </p>
-    <h3 align="left">Languages and Tools:</h3>
-    <p align="left">
+    <h3 align="center">Languages and Tools</h3>
+    <p align="center">
       <a
         href="https://www.typescriptlang.org/"
         target="_blank"
@@ -148,6 +136,30 @@
           alt="cypress"
         />
       </a>
+      <a href="https://www.vercel.com" target="_blank" rel="noreferrer">
+        <img
+          src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"
+          alt="vercel"
+        />
+      </a>
+      <a href="https://www.npm.com" target="_blank" rel="noreferrer">
+        <img
+          src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"
+          alt="npm"
+        />
+      </a>
+      <a href="https://www.react-router.com" target="_blank" rel="noreferrer">
+        <img
+          src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"
+          alt="react-router"
+        />
+      </a>
+      <a href="https://www.vscode.com" target="_blank" rel="noreferrer">
+        <img
+          src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"
+          alt="vscode"
+        />
+      </a>
       <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
         <img
           src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"
@@ -167,6 +179,7 @@
         />
       </a>
     </p>
+        <h3 align="center">Stats</h3>
     <div
       style="
         display: flex;
