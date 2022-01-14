@@ -1,13 +1,11 @@
   <h1 align="center">Hi there, I'm Aly</h1>
     <h3 align="center">A Front-end developer from Iran</h3>
-
     <p align="left">
       <img
         src="https://komarev.com/ghpvc/?username=dev-aly3n&label=Profile%20views&color=0e75b6&style=flat"
         alt="dev-aly3n"
       />
     </p>
-
     <p align="center">
       <a href="https://github.com/ryo-ma/github-profile-trophy"
         ><img
@@ -15,7 +13,6 @@
           alt="dev-aly3n"
       /></a>
     </p>
-
     - 🔭 currently working on [Isu-gate](https://github.com/dev-aly3n/isu-gate)
     - 🌱 currently learning **Jest & React Testing Library** - 🔨 looking to
     collaborate on [Isu-portfolio](https://github.com/dev-aly3n/Isu-portfolio) -
@@ -24,7 +21,6 @@
     [https://aly3n.dev/projects](https://aly3n.dev/projects) - 💬 Ask me about
     **React - Next - javaScript** - 📫 How to reach me
     **https://www.linkedin.com/in/aly-mohamadi/**
-
     <h3 align="left">Connect with me:</h3>
     <p align="left">
       <a href="https://linkedin.com/in/aly-mohamadi" target="_blank"
@@ -54,7 +50,6 @@
           width="30"
       /></a>
     </p>
-
     <h3 align="left">Languages and Tools:</h3>
     <p align="left">
       <a
@@ -101,14 +96,12 @@
           alt="html5"
         />
       </a>
-
       <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
         <img
           src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
           alt="css3"
         />
       </a>
-
       <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
         <img
           src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"
@@ -121,21 +114,18 @@
           alt="graphql"
         />
       </a>
-
       <a href="https://jestjs.io" target="_blank" rel="noreferrer">
         <img
           src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white"
           alt="jest"
         />
       </a>
-
       <a href="https://redux.js.org" target="_blank" rel="noreferrer">
         <img
           src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
           alt="redux"
         />
       </a>
-
       <a href="https://webpack.js.org" target="_blank" rel="noreferrer">
         <img
           src="https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white"
@@ -167,7 +157,6 @@
         />
       </a>
     </p>
-
     <div
       style="
         display: flex;
@@ -183,7 +172,6 @@
         alt="dev-aly3n"
         width="400"
       />
-
       <img
         align="center"
         src="https://github-readme-streak-stats.herokuapp.com/?user=dev-aly3n&theme=nightowl"
