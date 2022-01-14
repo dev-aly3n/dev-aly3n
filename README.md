@@ -44,7 +44,7 @@
       <a href="https://t.me/aly3n" target="_blank"
         ><img
           align="center"
-          src="	https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"
+          src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"
           alt="aly-mohamadi"
       /></a>
     </p>
