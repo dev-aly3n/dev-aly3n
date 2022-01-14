@@ -15,7 +15,7 @@
     </p>
     - 🔭 currently working on [Isu-gate](https://github.com/dev-aly3n/isu-gate)
     <p>
-    - 🌱 currently learning **Jest & React Testing Library**
+    - 🌱 currently learning <strong>Jest & React Testing Library</strong>
     </p>
     <p>
      - 🔨 looking to collaborate on [Isu-portfolio](https://github.com/dev-aly3n/Isu-portfolio)
@@ -27,7 +27,7 @@
     - 👨‍💻 All of my projects are available at [https://aly3n.dev/projects](https://aly3n.dev/projects)
     </p>
     <p>
-     - 💬 Ask me about **React - Next - javaScript** 
+     - 💬 Ask me about <strong>React - Next - javaScript</strong>
     </p>
     <h3 align="left">Connect with me:</h3>
     <p align="left">
