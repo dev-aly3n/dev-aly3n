@@ -13,7 +13,9 @@
           alt="dev-aly3n"
       /></a>
     </p>
+    <p>
     - 🔭 currently working on [Isu-gate](https://github.com/dev-aly3n/isu-gate)
+    </p>
     <p>
     - 🌱 currently learning <strong>Jest & React Testing Library</strong>
     </p>
