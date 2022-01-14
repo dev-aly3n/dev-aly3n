@@ -178,16 +178,16 @@
         alt="dev-aly3n"
         width="400"
       />
-      <figure>
-        <embed
-          width="300"
-          src="https://wakatime.com/share/@aly3n/28c1bd08-d655-4249-a17e-a985ff32f4d9.svg"
-        />
-      </figure>
-      <figure>
-        <embed
-          width="300"
+      <img
+        align="center"
           src="https://wakatime.com/share/@aly3n/d6968611-fd97-4c0d-8ba1-1fd7e69ba510.svg"
-        />
-      </figure>
+        alt="dev-aly3n"
+        width="400"
+      />
+      <img
+        align="center"
+          src="https://wakatime.com/share/@aly3n/28c1bd08-d655-4249-a17e-a985ff32f4d9.svg"
+        alt="dev-aly3n"
+        width="400"
+      />
     </div>
