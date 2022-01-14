@@ -6,5 +6,5 @@
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=aly3n)](https://github.com/anuraghazra/github-readme-stats)
 
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=dev-aly3n&repo=github-readme-stats" />
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=dev-aly3n&repo=convoychat" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-aly3n&hide=css&show_icons=true&theme=nightowl&langs_count=7" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=dev-aly3n&show_icons=true&theme=nightowl" />
