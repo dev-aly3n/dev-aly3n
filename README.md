@@ -14,13 +14,21 @@
       /></a>
     </p>
     - 🔭 currently working on [Isu-gate](https://github.com/dev-aly3n/isu-gate)
-    - 🌱 currently learning **Jest & React Testing Library** - 🔨 looking to
-    collaborate on [Isu-portfolio](https://github.com/dev-aly3n/Isu-portfolio) -
-    🤝 looking for help with [Wikianime](https://github.com/dev-aly3n/wikianime)
-    - 👨‍💻 All of my projects are available at
-    [https://aly3n.dev/projects](https://aly3n.dev/projects) - 💬 Ask me about
-    **React - Next - javaScript** - 📫 How to reach me
-    **https://www.linkedin.com/in/aly-mohamadi/**
+    <p>
+    - 🌱 currently learning **Jest & React Testing Library**
+    </p>
+    <p>
+     - 🔨 looking to collaborate on [Isu-portfolio](https://github.com/dev-aly3n/Isu-portfolio)
+    </p>
+    <p>
+      -🤝 looking for help with [Wikianime](https://github.com/dev-aly3n/wikianime)
+    </p>
+    <p>
+    - 👨‍💻 All of my projects are available at [https://aly3n.dev/projects](https://aly3n.dev/projects)
+    </p>
+    <p>
+     - 💬 Ask me about **React - Next - javaScript** 
+    </p>
     <h3 align="left">Connect with me:</h3>
     <p align="left">
       <a href="https://linkedin.com/in/aly-mohamadi" target="_blank"
