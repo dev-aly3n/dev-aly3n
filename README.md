@@ -14,10 +14,10 @@
       /></a>
     </p>
     <p>
-    - 🔭 currently working on <a href="https://github.com/dev-aly3n/isu-portfolio">Isu-gate</a>
+    - 🔭 currently working on <a href="https://github.com/DeDogmaDao">DeDogmaDAO front-end</a>
     </p>
     <p>
-    - 🌱 currently learning <strong>Jest & React Testing Library</strong>
+    - 🌱 currently learning <strong>Jest & React Testing Library | web3js | ethers</strong>
     </p>
     <p>
       -🤝 looking for help with <a href="https://github.com/dev-aly3n/wikianime">Wikianime</a>
