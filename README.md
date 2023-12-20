@@ -14,11 +14,11 @@
       /></a>
     </p>
     <p>
-    - 🔭 currently working on <a href="https://github.com/DeDogmaDao">DeDogmaDAO front-end</a>
+    - 🔭 currently working on <a href="https://github.com/irnb/web3-wall">web3-wall</a>
     </p>
-    <p>
+<!--     <p>
       -🤝 looking for help with <a href="https://github.com/dev-aly3n/wikianime">Wikianime</a>
-    </p>
+    </p> -->
     <p>
      - 📜<strong>My Personal Website</strong>: <a href="https://aly3n.dev">Aly3n.dev</a>
     </p>
