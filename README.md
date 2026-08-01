@@ -14,6 +14,16 @@
 
 <br>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-light.svg?v=2">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=2" alt="One engineer, the whole path: request, interface, services, chains, settlement.">
+  </picture>
+</p>
+
+<br>
+
 ### Building now
 
 **[iLayer](https://ilayer.io)** · Fullstack Engineer<br>
