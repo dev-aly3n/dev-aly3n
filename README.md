@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=1">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-light.svg?v=1">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=1" alt="Aly Mohamadi — full-stack engineer. Cross-chain DeFi infrastructure, AI platforms, and the interfaces on top. Dubai, UAE. TypeScript, Python, Solidity. 8+ years shipping to production.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-light.svg?v=2">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=2" alt="Aly Mohamadi — full-stack engineer. Cross-chain DeFi infrastructure, AI platforms, and the interfaces on top. Dubai, UAE. TypeScript, Python, Solidity. 8+ years shipping to production.">
   </picture>
 </p>
 
@@ -63,21 +63,21 @@ platforms — the part where I learned to ship.</sub>
 
 ### Stack
 
-|  |  |
-| --- | --- |
-| **Core** | TypeScript · Python · React · Next.js |
-| **Web3** | viem · wagmi · ethers.js · Polkadot.js · Solidity · Hardhat |
-| **Backend** | FastAPI · NestJS · PostgreSQL · SQLAlchemy · Prisma · Socket.io |
-| **Interface** | Tailwind · MUI · TanStack Query · Zustand · Three.js / R3F · Framer Motion |
-| **Platform** | Docker · Turborepo · React Native · Prometheus · Grafana |
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-dark.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-light.svg?v=2">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-dark.svg?v=2" alt="Core: TypeScript, Python, React, Next.js. Web3: viem, wagmi, ethers.js, Polkadot.js, Solidity, Hardhat, LayerZero. Backend: FastAPI, NestJS, PostgreSQL, SQLAlchemy, Prisma, Socket.io. Interface: Tailwind, MUI, TanStack Query, Zustand, Three.js, R3F, Framer Motion. Platform: Docker, Turborepo, React Native, Prometheus, Grafana.">
+  </picture>
+</p>
 
 <br>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=1">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=1">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=1" alt="5,265 contributions in the past 12 months · 4,295 commits authored · 907 in organization and private repositories · 25 repositories contributed to">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=2">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=2" alt="5,265 contributions in the past 12 months · 4,295 commits authored · 907 in organization and private repositories · 25 repositories contributed to">
   </picture>
 </p>
 
