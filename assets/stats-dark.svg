@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" role="img" aria-label="5,265 contributions in the past 12 months, 4,295 commits, 907 in private repositories, 25 repositories">
+  <defs>
+    <linearGradient id="sgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="50%" stop-color="#a371f7"/>
+      <stop offset="100%" stop-color="#39d0d8"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a371f7"/>
+      <stop offset="100%" stop-color="#39d0d8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" rx="10" fill="#161b22" stroke="#232c38" stroke-width="1"/>
+  
+    <g>
+      <text x="150" y="66" text-anchor="middle" font-size="42" font-weight="700"
+            fill="url(#sgrad)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif">5,265</text>
+      <text x="150" y="94" text-anchor="middle" font-size="14.5" font-weight="600"
+            fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" letter-spacing="0.2">Contributions</text>
+      <text x="150" y="116" text-anchor="middle" font-size="12" font-weight="400"
+            fill="#6e7a8a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif">past 12 months</text>
+    </g>
+    <g>
+      <text x="450" y="66" text-anchor="middle" font-size="42" font-weight="700"
+            fill="url(#sgrad)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif">4,295</text>
+      <text x="450" y="94" text-anchor="middle" font-size="14.5" font-weight="600"
+            fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" letter-spacing="0.2">Commits</text>
+      <text x="450" y="116" text-anchor="middle" font-size="12" font-weight="400"
+            fill="#6e7a8a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif">authored</text>
+    </g><rect x="300" y="42" width="1" height="76" fill="#232c38"/>
+    <g>
+      <text x="750" y="66" text-anchor="middle" font-size="42" font-weight="700"
+            fill="url(#sgrad)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif">907</text>
+      <text x="750" y="94" text-anchor="middle" font-size="14.5" font-weight="600"
+            fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" letter-spacing="0.2">Private</text>
+      <text x="750" y="116" text-anchor="middle" font-size="12" font-weight="400"
+            fill="#6e7a8a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif">org &#38; private repos</text>
+    </g><rect x="600" y="42" width="1" height="76" fill="#232c38"/>
+    <g>
+      <text x="1050" y="66" text-anchor="middle" font-size="42" font-weight="700"
+            fill="url(#sgrad)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif">25</text>
+      <text x="1050" y="94" text-anchor="middle" font-size="14.5" font-weight="600"
+            fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" letter-spacing="0.2">Repositories</text>
+      <text x="1050" y="116" text-anchor="middle" font-size="12" font-weight="400"
+            fill="#6e7a8a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif">contributed to</text>
+    </g><rect x="900" y="42" width="1" height="76" fill="#232c38"/>
+  <rect x="380" y="138" width="440" height="2" rx="1" fill="url(#bar)" opacity="0.85">
+    <animate attributeName="x" values="-200;960;-200" dur="9s" repeatCount="indefinite"/>
+  </rect>
+</svg>

@@ -1,20 +1,18 @@
-<h1 align="center">Aly Mohamadi</h1>
-
 <p align="center">
-  Full-stack engineer building <strong>cross-chain DeFi infrastructure</strong> and <strong>AI products</strong> —<br>
-  from solver bots and settlement backends to the interfaces people actually use.
-</p>
-
-<p align="center">
-  <sub>Dubai, UAE&nbsp; ·&nbsp; 8+ years in TypeScript &amp; Python&nbsp; ·&nbsp; co-founder at Spila</sub>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=1">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-light.svg?v=1">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=1" alt="Aly Mohamadi — full-stack engineer. Cross-chain DeFi infrastructure, AI platforms, and the interfaces on top. Dubai, UAE. TypeScript, Python, Solidity. 8+ years shipping to production.">
+  </picture>
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/aly-mohamadi/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://t.me/aly3n"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram"></a>
+  <a href="https://pypi.org/project/aipager/"><img src="https://img.shields.io/pypi/dm/aipager?style=flat-square&label=aipager%20installs&color=3775A9&logo=pypi&logoColor=white" alt="aipager installs per month"></a>
 </p>
 
----
+<br>
 
 ### Building now
 
@@ -74,6 +72,14 @@ platforms — the part where I learned to ship.</sub>
 | **Platform** | Docker · Turborepo · React Native · Prometheus · Grafana |
 
 <br>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=1">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=1">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=1" alt="5,265 contributions in the past 12 months · 4,295 commits authored · 907 in organization and private repositories · 25 repositories contributed to">
+  </picture>
+</p>
 
 <p align="center">
   <sub>Most of my work lives in private and organization repositories —<br>the public graph tells only part of the story.</sub>
