@@ -85,9 +85,9 @@ platforms — the part where I learned to ship.</sub>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=2">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=2">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=2" alt="5,265 contributions in the past 12 months · 4,295 commits authored · 907 in organization and private repositories · 25 repositories contributed to">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=3">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=3">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=3" alt="5,265 contributions in the past 12 months, 4,295 commits authored, 907 in organization and private repositories, 25 repositories contributed to, 37.4 thousand PyPI downloads. Languages by code volume: TypeScript 40.8%, Python 23.5%, CSS 17.0%, JavaScript 7.3%, Solidity 6.3%, Other 5.1%.">
   </picture>
 </p>
 
