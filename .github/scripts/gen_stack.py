@@ -16,25 +16,28 @@ FONT = ("-apple-system,BlinkMacSystemFont,\'Segoe UI\',Roboto,"
         "\'Helvetica Neue\',Arial,sans-serif")
 
 ROWS = [
-    ("Core", ["TypeScript", "Python", "React", "React Native", "Next.js"]),
-    ("Web3", ["viem", "wagmi", "ethers.js", "Polkadot.js", "Solidity", "Hardhat", "LayerZero"]),
+    ("Core", ["TypeScript", "Python", "Rust", "React", "React Native", "Next.js"]),
+    ("Web3", ["viem", "wagmi", "ethers.js", "Solidity", "Hardhat", "Polkadot.js", "Solana", "LayerZero"]),
     ("Backend", ["FastAPI", "NestJS", "PostgreSQL", "SQLAlchemy", "Prisma", "Socket.io"]),
-    ("Interface", ["Tailwind", "MUI", "TanStack Query", "Zustand", "Three.js", "R3F", "Framer Motion"]),
-    ("Platform", ["Docker", "Turborepo", "Prometheus", "Grafana"]),
+    ("Frontend", ["Tailwind", "MUI", "TanStack Query", "Zustand", "Three.js", "R3F", "Framer Motion"]),
+    ("Testing", ["Vitest", "Jest", "pytest"]),
+    ("Platform", ["Docker", "AWS", "Turborepo", "Prometheus", "Grafana"]),
 ]
 
 WIDTHS = {
     "TypeScript": 71.78,
     "Python": 46.79,
+    "Rust": 29.9,
     "React": 37.8,
     "React Native": 83.59,
     "Next.js": 45.8,
     "viem": 31.42,
     "wagmi": 42.94,
     "ethers.js": 57.21,
-    "Polkadot.js": 72.97,
     "Solidity": 49.27,
     "Hardhat": 53.26,
+    "Polkadot.js": 72.97,
+    "Solana": 44.52,
     "LayerZero": 66.37,
     "FastAPI": 50.1,
     "NestJS": 47.46,
@@ -49,7 +52,11 @@ WIDTHS = {
     "Three.js": 53.46,
     "R3F": 25.99,
     "Framer Motion": 96.17,
+    "Vitest": 38.55,
+    "Jest": 28.09,
+    "pytest": 41.54,
     "Docker": 46.96,
+    "AWS": 31.3,
     "Turborepo": 68.51,
     "Prometheus": 79.77,
     "Grafana": 52.15
@@ -58,7 +65,8 @@ LABELS = {
     "Core": 36.2,
     "Web3": 37.98,
     "Backend": 63.16,
-    "Interface": 71.9,
+    "Frontend": 71.86,
+    "Testing": 56.6,
     "Platform": 70.62
 }
 
