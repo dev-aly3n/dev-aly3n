@@ -47,6 +47,17 @@ LANGS = [
     ("Other", 5.1, None),
 ]
 
+# Repo/org counts need a `repo`-scoped token to see private and org
+# repositories, which is more access than this workflow should hold. They move
+# slowly, so they are constants. Recompute with a repo-scoped token via:
+#   GET /user/repos?affiliation=owner            -> REPOS_OWNED
+#   GET /repos/{full_name}/commits?author=USER   -> REPOS_EXTERNAL / ORGS
+# Last measured 2026-08: 75 owned (46 public, 29 private); 29 external repos
+# with commits across 11 owners.
+REPOS_OWNED = 75
+REPOS_EXTERNAL = 29
+ORGS = 11
+
 H = 300
 BAR_X, BAR_W, BAR_Y, BAR_H = 60.0, 1080.0, 206.0, 16.0
 
@@ -68,52 +79,63 @@ def _get(url):
 
 
 def contributions():
-    """(stats dict, private_available). Prefers the private-aware viewer query."""
-    # repositoriesContributedTo is deliberately not queried: it only counts
-    # repos the token can see, so a read:user-scoped token reports 8 instead of
-    # the real 25. Widening the token to `repo` just to fix one cell is not
-    # worth the blast radius, so the cell is dropped instead.
-    fields = ("contributionsCollection { totalCommitContributions "
-              "restrictedContributionsCount contributionCalendar { totalContributions } }")
-    tok = os.environ.get("STATS_TOKEN")
-    if tok:
-        q = "query { viewer { %s } }" % fields
-        node, private_ok = "viewer", True
-    else:
-        tok = os.environ["GITHUB_TOKEN"]
-        q = 'query { user(login: "%s") { %s } }' % (USER, fields)
-        node, private_ok = "user", False
-        print("STATS_TOKEN not set -> public-only numbers, hiding Private cell")
+    """All-time commit + contribution totals, summed per year.
 
-    d = _post("https://api.github.com/graphql", {"query": q}, tok)
+    contributionsCollection only covers a one-year window, so every year GitHub
+    has on record is queried in a single aliased request and summed. Returns
+    (commits, contributions, ok) where ok is False if the token is under-scoped.
+    """
+    tok = os.environ.get("STATS_TOKEN")
+    node = "viewer"
+    if not tok:
+        tok = os.environ["GITHUB_TOKEN"]
+        node = f'user(login: "{USER}")'
+        print("STATS_TOKEN not set -> public-only numbers")
+
+    years = _post("https://api.github.com/graphql",
+                  {"query": "query { %s { contributionsCollection { contributionYears } } }" % node},
+                  tok)["data"][node.split("(")[0]]["contributionsCollection"]["contributionYears"]
+
+    # One aliased request instead of one round-trip per year.
+    blocks = "".join(
+        f'y{y}: contributionsCollection(from:"{y}-01-01T00:00:00Z",to:"{y}-12-31T23:59:59Z")'
+        '{ totalCommitContributions restrictedContributionsCount'
+        ' contributionCalendar { totalContributions } } '
+        for y in years)
+    d = _post("https://api.github.com/graphql",
+              {"query": "query { %s { %s } }" % (node, blocks)}, tok)
     if "errors" in d:
         raise SystemExit(f"GraphQL error: {d['errors']}")
-    v = d["data"][node]
-    c = v["contributionsCollection"]
+    v = d["data"][node.split("(")[0]]
 
-    # Scope guard. restrictedContributionsCount means "contributions the viewer
-    # may not see the detail of", so it is scope-dependent: with read:user your
-    # own private commits land in totalCommitContributions, without it they all
-    # fall into restricted and totalCommitContributions collapses to public-only
-    # (observed: 4,475/852 with the scope vs 436/5,093 without).
-    # Publishing the second shape would badly understate the commit count, so
-    # fail loudly rather than write a wrong panel.
-    if private_ok:
-        total = c["contributionCalendar"]["totalContributions"] or 1
-        if c["restrictedContributionsCount"] / total > 0.5:
-            raise SystemExit(
-                "STATS_TOKEN looks under-scoped: "
-                f"{c['restrictedContributionsCount']} of {total} contributions came back "
-                "restricted, which means commits would publish as public-only. "
-                "Regenerate the token with the read:user scope."
-            )
-        if not c["restrictedContributionsCount"]:
-            private_ok = False
-    return {
-        "contrib": c["contributionCalendar"]["totalContributions"],
-        "commits": c["totalCommitContributions"],
-        "private": c["restrictedContributionsCount"],
-    }, private_ok
+    commits = sum(v[f"y{y}"]["totalCommitContributions"] for y in years)
+    restricted = sum(v[f"y{y}"]["restrictedContributionsCount"] for y in years)
+    total = sum(v[f"y{y}"]["contributionCalendar"]["totalContributions"] for y in years)
+
+    # Scope guard: without read:user, private commits are reported as
+    # "restricted" instead of counted, collapsing commits to public-only
+    # (observed all-time: 4,397 commits / 15,689 restricted vs the true split).
+    ok = restricted <= commits
+    if not ok:
+        raise SystemExit(
+            f"STATS_TOKEN looks under-scoped: {restricted:,} restricted vs {commits:,} "
+            "counted commits all-time. Regenerate the token with the read:user scope.")
+    print(f"years {min(years)}-{max(years)}: {commits:,} commits, {total:,} contributions")
+    return commits, total, ok
+
+
+def stars():
+    """Stars across public repos -- no auth needed, so no extra token scope."""
+    total, page = 0, 1
+    while True:
+        batch = _get(f"https://api.github.com/users/{USER}/repos?per_page=100&page={page}")
+        if not batch:
+            break
+        total += sum(r["stargazers_count"] for r in batch)
+        page += 1
+        if len(batch) < 100:
+            break
+    return total
 
 
 def downloads():
@@ -196,14 +218,18 @@ def render(p, cells):
 
 
 def main():
-    s, private_ok = contributions()
+    commits, total_contrib, _ = contributions()
+    star_count = stars()
     dl = downloads()
-    cells = [(f"{s['contrib']:,}", "Contributions", "past 12 months"),
-             (f"{s['commits']:,}", "Commits", "authored")]
-    if private_ok:
-        # Label spells out "contributions": the previous "Private / org &
-        # private repos" wording read as a repo count and was misread as such.
-        cells.append((f"{s['private']:,}", "Private contributions", "not visible publicly"))
+
+    cells = [
+        (f"{commits:,}", "Commits", "all time, since 2015"),
+        (f"{total_contrib:,}", "Contributions", "all time"),
+        (str(REPOS_OWNED + REPOS_EXTERNAL), "Repositories",
+         f"{REPOS_OWNED} mine, {REPOS_EXTERNAL} external"),
+        (str(ORGS), "Organizations", "contributed to"),
+        (f"{star_count:,}", "Stars", "earned"),
+    ]
     if dl:
         cells.append((human(dl), "Downloads", "PyPI, all time"))
 
