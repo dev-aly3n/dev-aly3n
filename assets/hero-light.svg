@@ -30,8 +30,6 @@
     <text x="74" y="194" font-size="19" font-weight="500" fill="#4a5563">Cross-chain DeFi infrastructure &#183; AI platforms &#183; the interfaces on top</text>
     <text x="74" y="226" font-size="13.5" fill="#6a7583" letter-spacing="0.3">TypeScript &#183; Python &#183; Solidity &#183; 8+ years shipping to production</text>
   </g>
-  <rect x="72" y="246" width="118" height="3" rx="1.5" fill="url(#rule)">
-    <animate attributeName="width" values="118;186;118" dur="7s" repeatCount="indefinite"/>
-  </rect>
+  <rect x="72" y="246" width="152" height="3" rx="1.5" fill="url(#rule)"/>
   <rect y="297" width="1200" height="3" fill="url(#rule)" opacity="0.85"/>
 </svg>

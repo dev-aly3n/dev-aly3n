@@ -245,32 +245,36 @@ def main():
 
 
 def _sync_readme(cells):
-    """Point the README at the new SVG content and keep its alt text truthful.
+    """Point the README at current asset content and keep alt text truthful.
 
-    The stats URLs carry a ?v= tag derived from the file's own content hash.
-    Without it the URL never changes, so browsers and GitHub's image proxy keep
-    serving the previous render long after the numbers move.
+    Every asset URL carries a ?v= tag derived from that asset's own content
+    hash. With a fixed tag the URL never changes, so browsers and GitHub's
+    image proxy keep serving a previous render after the file is updated.
+    Covers hero/flow/stack too, not just stats: those are edited by hand and
+    hit the same problem.
     """
     readme = ROOT / "README.md"
     if not readme.exists():
         return
-    text = readme.read_text()
-    digest = hashlib.sha1(
-        (OUT / "stats-dark.svg").read_bytes() + (OUT / "stats-light.svg").read_bytes()
-    ).hexdigest()[:8]
+    text = original = readme.read_text()
 
-    text = re.sub(r"(assets/stats-(?:dark|light)\.svg)\?v=[A-Za-z0-9]+",
-                  rf"\1?v={digest}", text)
+    for asset in ("hero", "flow", "stack", "stats"):
+        blobs = b""
+        for variant in ("dark", "light"):
+            p = OUT / f"{asset}-{variant}.svg"
+            if p.exists():
+                blobs += p.read_bytes()
+        if not blobs:
+            continue
+        digest = hashlib.sha1(blobs).hexdigest()[:8]
+        text = re.sub(rf"(assets/{asset}-(?:dark|light)\.svg)\?v=[A-Za-z0-9]+",
+                      rf"\1?v={digest}", text)
+
     alt = ", ".join(f"{v} {l.lower()} ({s})" for v, l, s in cells) + "."
     alt = alt.replace("&#38;", "and")
     text = re.sub(r'(<img src="[^"]*assets/stats-dark\.svg[^"]*" alt=")[^"]*(")',
                   lambda m: m.group(1) + alt + m.group(2), text)
 
-    if text != readme.read_text():
+    if text != original:
         readme.write_text(text)
-        print(f"README synced (stats ?v={digest})")
-
-
-
-if __name__ == "__main__":
-    main()
+        print("README synced (asset ?v tags refreshed)")
