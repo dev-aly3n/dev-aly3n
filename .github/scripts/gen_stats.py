@@ -278,3 +278,7 @@ def _sync_readme(cells):
     if text != original:
         readme.write_text(text)
         print("README synced (asset ?v tags refreshed)")
+
+
+if __name__ == "__main__":
+    main()

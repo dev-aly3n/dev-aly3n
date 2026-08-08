@@ -30,7 +30,11 @@ jobs:
           # If absent the script drops the "Private" cell instead of guessing.
           STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python .github/scripts/gen_stats.py
+        run: |
+          # Fail if the generator produces no output. A silent no-op exiting 0
+          # previously hid a missing __main__ entry point for a full run.
+          python .github/scripts/gen_stats.py | tee /tmp/gen.log
+          grep -q "^updated:" /tmp/gen.log || { echo "generator produced no output"; exit 1; }
 
       - name: Commit if the numbers moved
         run: |
