@@ -74,9 +74,9 @@ crowdlending protocol frontend on Arbitrum.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-dark.svg?v=f16408fa">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-light.svg?v=f16408fa">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-dark.svg?v=f16408fa" alt="Core: TypeScript, Python, Rust, React, React Native, Next.js; Web3: viem, wagmi, ethers.js, Solidity, Hardhat, Polkadot.js, Solana, LayerZero; Backend: FastAPI, NestJS, PostgreSQL, SQLAlchemy, Prisma, Socket.io; Frontend: Tailwind, MUI, TanStack Query, Zustand, Three.js, R3F, Framer Motion; Testing: Vitest, Jest, pytest; Platform: Docker, AWS, Turborepo, Prometheus, Grafana.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-dark.svg?v=f027b3cc">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-light.svg?v=f027b3cc">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-dark.svg?v=f027b3cc" alt="Core: TypeScript, Python, Rust, React, React Native, Next.js; Web3: viem, wagmi, ethers.js, Solidity, Hardhat, Polkadot.js, Solana, LayerZero; Backend: FastAPI, NestJS, PostgreSQL, SQLAlchemy, Prisma, Socket.io; Frontend: Tailwind, MUI, TanStack Query, Zustand, Three.js, R3F, Framer Motion; Testing: Vitest, Jest, pytest; Platform: Docker, AWS, Turborepo, Prometheus, Grafana.">
   </picture>
 </p>
 
@@ -84,9 +84,9 @@ crowdlending protocol frontend on Arbitrum.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=b4282e32">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=b4282e32">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=b4282e32" alt="20,378 contributions (all time, since 2015), 104 repositories (75 mine, 29 external), 11 organizations (contributed to), 63 stars (earned), 41.3k downloads (PyPI, all time).">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=c45488b6">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=c45488b6">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=c45488b6" alt="20,381 contributions (all time, since 2015), 104 repositories (75 mine, 29 external), 11 organizations (contributed to), 63 stars (earned), 41.3k downloads (PyPI, all time).">
   </picture>
 </p>
 
