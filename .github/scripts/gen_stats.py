@@ -201,7 +201,9 @@ def main():
     cells = [(f"{s['contrib']:,}", "Contributions", "past 12 months"),
              (f"{s['commits']:,}", "Commits", "authored")]
     if private_ok:
-        cells.append((f"{s['private']:,}", "Private", "org &#38; private repos"))
+        # Label spells out "contributions": the previous "Private / org &
+        # private repos" wording read as a repo count and was misread as such.
+        cells.append((f"{s['private']:,}", "Private contributions", "not visible publicly"))
     if dl:
         cells.append((human(dl), "Downloads", "PyPI, all time"))
 
