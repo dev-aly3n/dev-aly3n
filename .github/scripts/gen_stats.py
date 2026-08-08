@@ -69,10 +69,12 @@ def _get(url):
 
 def contributions():
     """(stats dict, private_available). Prefers the private-aware viewer query."""
+    # repositoriesContributedTo is deliberately not queried: it only counts
+    # repos the token can see, so a read:user-scoped token reports 8 instead of
+    # the real 25. Widening the token to `repo` just to fix one cell is not
+    # worth the blast radius, so the cell is dropped instead.
     fields = ("contributionsCollection { totalCommitContributions "
-              "restrictedContributionsCount contributionCalendar { totalContributions } } "
-              "repositoriesContributedTo(contributionTypes:[COMMIT,PULL_REQUEST], "
-              "includeUserRepositories:true) { totalCount }")
+              "restrictedContributionsCount contributionCalendar { totalContributions } }")
     tok = os.environ.get("STATS_TOKEN")
     if tok:
         q = "query { viewer { %s } }" % fields
@@ -111,7 +113,6 @@ def contributions():
         "contrib": c["contributionCalendar"]["totalContributions"],
         "commits": c["totalCommitContributions"],
         "private": c["restrictedContributionsCount"],
-        "repos": v["repositoriesContributedTo"]["totalCount"],
     }, private_ok
 
 
@@ -201,7 +202,6 @@ def main():
              (f"{s['commits']:,}", "Commits", "authored")]
     if private_ok:
         cells.append((f"{s['private']:,}", "Private", "org &#38; private repos"))
-    cells.append((str(s["repos"]), "Repositories", "contributed to"))
     if dl:
         cells.append((human(dl), "Downloads", "PyPI, all time"))
 
