@@ -115,11 +115,15 @@ def contributions():
     # Scope guard: without read:user, private commits are reported as
     # "restricted" instead of counted, collapsing commits to public-only
     # (observed all-time: 4,397 commits / 15,689 restricted vs the true split).
+    # Warn, don't fail. contributionCalendar.totalContributions is
+    # scope-independent, so the displayed panel stays correct even when the
+    # token loses read:user -- only the (unused) commit split degrades. Aborting
+    # the run would stop good updates over a metric nobody sees.
     ok = restricted <= commits
     if not ok:
-        raise SystemExit(
-            f"STATS_TOKEN looks under-scoped: {restricted:,} restricted vs {commits:,} "
-            "counted commits all-time. Regenerate the token with the read:user scope.")
+        print(f"WARNING: STATS_TOKEN looks under-scoped ({restricted:,} restricted vs "
+              f"{commits:,} counted commits). Contributions are unaffected; add the "
+              "read:user scope if the commit split is ever needed again.")
     print(f"years {min(years)}-{max(years)}: {commits:,} commits, {total:,} contributions")
     return commits, total, ok
 
@@ -223,8 +227,7 @@ def main():
     dl = downloads()
 
     cells = [
-        (f"{commits:,}", "Commits", "all time, since 2015"),
-        (f"{total_contrib:,}", "Contributions", "all time"),
+        (f"{total_contrib:,}", "Contributions", "all time, since 2015"),
         (str(REPOS_OWNED + REPOS_EXTERNAL), "Repositories",
          f"{REPOS_OWNED} mine, {REPOS_EXTERNAL} external"),
         (str(ORGS), "Organizations", "contributed to"),
