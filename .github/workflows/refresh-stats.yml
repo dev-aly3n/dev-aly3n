@@ -1,0 +1,45 @@
+name: Refresh profile stats
+
+on:
+  schedule:
+    # 04:17 UTC daily — off the hour, since GitHub's scheduler queues heavily
+    # on round times and delays cron runs.
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-stats
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate stat panels
+        env:
+          # read:user PAT — the only way to see restrictedContributionsCount.
+          # If absent the script drops the "Private" cell instead of guessing.
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/scripts/gen_stats.py
+
+      - name: Commit if the numbers moved
+        run: |
+          if git diff --quiet -- assets; then
+            echo "No change in assets/ — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git commit -m "chore: refresh profile stats"
+          git push
