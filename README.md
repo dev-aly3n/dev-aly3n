@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=2">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-light.svg?v=2">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=2" alt="Aly Mohamadi — full-stack engineer. Cross-chain DeFi infrastructure, AI platforms, and the interfaces on top. Dubai, UAE. TypeScript, Python, Solidity. 8+ years shipping to production.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=4">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-light.svg?v=4">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=4" alt="Aly Mohamadi, full-stack engineer. Cross-chain DeFi infrastructure, AI platforms, and the interfaces on top. Dubai, UAE.">
   </picture>
 </p>
 
@@ -16,9 +16,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=2">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-light.svg?v=2">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=2" alt="One engineer, the whole path: request, interface, services, chains, settlement.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=4">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-light.svg?v=4">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=4" alt="End to end: request, interface, services, chains, settlement.">
   </picture>
 </p>
 
@@ -27,8 +27,8 @@
 ### Building now
 
 **[iLayer](https://ilayer.io)** · Fullstack Engineer<br>
-Intent-based cross-chain execution layer on LayerZero V2. I work both ends: the solver bot that
-quotes, fills and settles orders across Arbitrum, Base, Polygon, BSC and Ethereum — and the
+Intent-based cross-chain execution layer on LayerZero V2. I work on both sides: the solver bot
+that quotes, fills and settles orders across Arbitrum, Base, Polygon, BSC and Ethereum, and the
 [swap interface](https://swap.ilayer.io) on top of it. Ported the solver from NestJS to
 Python/FastAPI for better async throughput.
 
@@ -36,12 +36,12 @@ Python/FastAPI for better async throughput.
 Helping shape a platform that turns static pitch decks into living startup profiles.
 
 **[Spila](https://www.spila.dev)** · Co-founder<br>
-Frontend and full-stack delivery for web3 teams. Led teams of 4–5 engineers across DEX,
+Frontend and full-stack delivery for web3 teams. Led teams of 4 to 5 engineers across DEX,
 lending and protocol frontends.
 
 ### Open source
 
-**[aipager](https://github.com/dev-aly3n/aipager)** — remote-control your AI coding agent from
+**[aipager](https://github.com/dev-aly3n/aipager)**: remote control for your AI coding agent over
 Telegram. Run Claude Code in a detached terminal, then read output, send prompts and approve
 permission requests from your phone, with no SSH session left open.<br>
 <a href="https://pypi.org/project/aipager/"><img src="https://img.shields.io/pypi/v/aipager?style=flat-square&label=pypi&color=3775A9" alt="PyPI version"></a>
@@ -49,35 +49,34 @@ permission requests from your phone, with no SSH session left open.<br>
 <img src="https://img.shields.io/badge/license-MIT-black?style=flat-square" alt="MIT license">
 <a href="https://aipager.run"><img src="https://img.shields.io/badge/aipager.run-000000?style=flat-square" alt="aipager.run"></a>
 
-**[dtach-bin](https://github.com/dev-aly3n/dtach-bin)** — the `dtach` binary packaged as
+**[dtach-bin](https://github.com/dev-aly3n/dtach-bin)**: the `dtach` binary packaged as
 platform-specific Python wheels, so `pip install` just works on Linux and macOS.<br>
 <a href="https://pypi.org/project/dtach-bin/"><img src="https://img.shields.io/pypi/v/dtach-bin?style=flat-square&label=pypi&color=3775A9" alt="PyPI version"></a>
 <a href="https://pypi.org/project/dtach-bin/"><img src="https://img.shields.io/pypi/dm/dtach-bin?style=flat-square&label=installs%2Fmonth&color=3775A9" alt="Downloads per month"></a>
 
 ### Selected work
 
-**[Xoul.ai](https://xoul.ai)** — AI character platform. Real-time chat over Socket.io, WebRTC voice
-calls with PCM streaming, voice cloning, and a media pipeline spanning 10+ image and 4 video
+**[Xoul.ai](https://xoul.ai)**: AI character platform. Real-time chat over Socket.io, WebRTC voice
+calls with PCM streaming, voice cloning, and a media pipeline covering 10+ image and 4 video
 engines, plus the React Native webview app. Restructuring the architecture cut the bundle by
 **80%** and build times from **8 minutes to 2**.
 
-**[Kylix Finance](https://kylix.finance)** — cross-chain lending on Polkadot. Built the on-chain
-package: type-safe custom RPC calls and transaction hooks for supply, borrow, repay and
+**[Kylix Finance](https://kylix.finance)**: cross-chain lending on Polkadot. Built the on-chain
+package with type-safe custom RPC calls and transaction hooks for supply, borrow, repay and
 liquidation bidding, inside a Turborepo monorepo. Also the 3D landing page in React Three Fiber.
 
-**Ithil &amp; Wizardex** — led a five-person team delivering a fully on-chain orderbook DEX and a
+**Ithil and Wizardex**: led a five-person team delivering a fully on-chain orderbook DEX and a
 crowdlending protocol frontend on Arbitrum.
 
-<sub>Before that: years of frontend and freelance work, from Joomla sites to Ethereum NFT
-platforms — the part where I learned to ship.</sub>
+<sub>Earlier: frontend and freelance work, from Joomla sites through to Ethereum NFT platforms.</sub>
 
 ### Stack
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-dark.svg?v=2">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-light.svg?v=2">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-dark.svg?v=2" alt="Core: TypeScript, Python, React, Next.js. Web3: viem, wagmi, ethers.js, Polkadot.js, Solidity, Hardhat, LayerZero. Backend: FastAPI, NestJS, PostgreSQL, SQLAlchemy, Prisma, Socket.io. Interface: Tailwind, MUI, TanStack Query, Zustand, Three.js, R3F, Framer Motion. Platform: Docker, Turborepo, React Native, Prometheus, Grafana.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-dark.svg?v=4">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-light.svg?v=4">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stack-dark.svg?v=4" alt="Core: TypeScript, Python, React, Next.js. Web3: viem, wagmi, ethers.js, Polkadot.js, Solidity, Hardhat, LayerZero. Backend: FastAPI, NestJS, PostgreSQL, SQLAlchemy, Prisma, Socket.io. Interface: Tailwind, MUI, TanStack Query, Zustand, Three.js, R3F, Framer Motion. Platform: Docker, Turborepo, React Native, Prometheus, Grafana.">
   </picture>
 </p>
 
@@ -85,12 +84,12 @@ platforms — the part where I learned to ship.</sub>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=3">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=3">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=3" alt="5,265 contributions in the past 12 months, 4,295 commits authored, 907 in organization and private repositories, 25 repositories contributed to, 37.4 thousand PyPI downloads. Languages by code volume: TypeScript 40.8%, Python 23.5%, CSS 17.0%, JavaScript 7.3%, Solidity 6.3%, Other 5.1%.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=4">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=4">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=4" alt="GitHub and package statistics">
   </picture>
 </p>
 
 <p align="center">
-  <sub>Most of my work lives in private and organization repositories —<br>the public graph tells only part of the story.</sub>
+  <sub>Most of my work lives in private and organization repositories,<br>so the public graph shows only part of it.</sub>
 </p>

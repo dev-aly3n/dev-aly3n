@@ -28,7 +28,7 @@
     <text x="72" y="92" font-size="12.5" font-weight="600" letter-spacing="3.6" fill="#0d9488" opacity="0.95">DUBAI, UAE</text>
     <text x="72" y="154" font-size="55" font-weight="700" fill="url(#name)" letter-spacing="-1.2">Aly Mohamadi</text>
     <text x="74" y="194" font-size="19" font-weight="500" fill="#4a5563">Cross-chain DeFi infrastructure &#183; AI platforms &#183; the interfaces on top</text>
-    <text x="74" y="226" font-size="13.5" fill="#6a7583" letter-spacing="0.3">TypeScript &#183; Python &#183; Solidity &#8212; 8+ years shipping to production</text>
+    <text x="74" y="226" font-size="13.5" fill="#6a7583" letter-spacing="0.3">TypeScript &#183; Python &#183; Solidity &#183; 8+ years shipping to production</text>
   </g>
   <rect x="72" y="246" width="118" height="3" rx="1.5" fill="url(#rule)">
     <animate attributeName="width" values="118;186;118" dur="7s" repeatCount="indefinite"/>

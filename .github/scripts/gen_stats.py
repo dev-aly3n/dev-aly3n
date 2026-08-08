@@ -15,9 +15,11 @@ would need a token with `repo` scope to see private repositories, and the
 distribution moves by fractions of a percent per month. Recompute it
 occasionally with the one-liner in LANGS' comment.
 """
+import hashlib
 import json
 import os
 import pathlib
+import re
 import urllib.error
 import urllib.request
 
@@ -166,17 +168,17 @@ def render(p, cells):
     for i, (val, label, sub) in enumerate(cells):
         cx = w * i + w / 2
         parts.append(
-            f'<text x="{cx:.0f}" y="74" text-anchor="middle" font-size="38" font-weight="700" '
+            f'<text x="{cx:.0f}" y="76" text-anchor="middle" font-size="44" font-weight="700" '
             f'fill="url(#sgrad)" font-family="{FONT}">{val}</text>'
-            f'<text x="{cx:.0f}" y="101" text-anchor="middle" font-size="14" font-weight="600" '
+            f'<text x="{cx:.0f}" y="106" text-anchor="middle" font-size="16.5" font-weight="600" '
             f'fill="{p["text"]}" font-family="{FONT}">{label}</text>'
-            f'<text x="{cx:.0f}" y="122" text-anchor="middle" font-size="11.5" '
+            f'<text x="{cx:.0f}" y="128" text-anchor="middle" font-size="13" '
             f'fill="{p["muted"]}" font-family="{FONT}">{sub}</text>')
         if i:
             parts.append(f'<rect x="{w * i:.0f}" y="50" width="1" height="78" fill="{p["stroke"]}"/>')
 
     parts.append(f'<rect x="60" y="158" width="1080" height="1" fill="{p["stroke"]}"/>')
-    parts.append(f'<text x="60" y="190" font-size="11.5" font-weight="600" letter-spacing="3" '
+    parts.append(f'<text x="60" y="190" font-size="13" font-weight="600" letter-spacing="3" '
                  f'fill="{p["muted"]}" font-family="{FONT}">LANGUAGES BY CODE VOLUME</text>')
 
     # Authentic linguist colours; TypeScript and Python are near-identical blues,
@@ -199,7 +201,7 @@ def render(p, cells):
         lx = BAR_X + step * i
         parts.append(
             f'<circle cx="{lx + 5:.1f}" cy="{BAR_Y + 52:.0f}" r="5" fill="{colour or p["other"]}"/>'
-            f'<text x="{lx + 18:.1f}" y="{BAR_Y + 57:.0f}" font-size="13" font-weight="500" '
+            f'<text x="{lx + 18:.1f}" y="{BAR_Y + 58:.0f}" font-size="14.5" font-weight="500" '
             f'fill="{p["text"]}" font-family="{FONT}">{name} '
             f'<tspan fill="{p["muted"]}" font-weight="400">{pct}%</tspan></text>')
 
@@ -239,6 +241,35 @@ def main():
     for p in (DARK, LIGHT):
         (OUT / f"stats-{p['name']}.svg").write_text(render(p, cells))
     print("updated:", " | ".join(f"{v} {l}" for v, l, _ in cells))
+    _sync_readme(cells)
+
+
+def _sync_readme(cells):
+    """Point the README at the new SVG content and keep its alt text truthful.
+
+    The stats URLs carry a ?v= tag derived from the file's own content hash.
+    Without it the URL never changes, so browsers and GitHub's image proxy keep
+    serving the previous render long after the numbers move.
+    """
+    readme = ROOT / "README.md"
+    if not readme.exists():
+        return
+    text = readme.read_text()
+    digest = hashlib.sha1(
+        (OUT / "stats-dark.svg").read_bytes() + (OUT / "stats-light.svg").read_bytes()
+    ).hexdigest()[:8]
+
+    text = re.sub(r"(assets/stats-(?:dark|light)\.svg)\?v=[A-Za-z0-9]+",
+                  rf"\1?v={digest}", text)
+    alt = ", ".join(f"{v} {l.lower()} ({s})" for v, l, s in cells) + "."
+    alt = alt.replace("&#38;", "and")
+    text = re.sub(r'(<img src="[^"]*assets/stats-dark\.svg[^"]*" alt=")[^"]*(")',
+                  lambda m: m.group(1) + alt + m.group(2), text)
+
+    if text != readme.read_text():
+        readme.write_text(text)
+        print(f"README synced (stats ?v={digest})")
+
 
 
 if __name__ == "__main__":
