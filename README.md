@@ -84,9 +84,9 @@ crowdlending protocol frontend on Arbitrum.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=05f8b22d">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=05f8b22d">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=05f8b22d" alt="20,391 contributions (all time, since 2015), 104 repositories (75 mine, 29 external), 11 organizations (contributed to), 63 stars (earned).">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=aaef3ccd">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=aaef3ccd">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=aaef3ccd" alt="20,393 contributions (all time, since 2015), 104 repositories (75 mine, 29 external), 11 organizations (contributed to), 63 stars (earned), 41.8k downloads (PyPI, all time).">
   </picture>
 </p>
 
