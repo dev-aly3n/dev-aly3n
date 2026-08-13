@@ -47,6 +47,7 @@ your phone.<br>
 <img src="https://img.shields.io/badge/license-MIT-black?style=flat-square" alt="MIT license">
 <a href="https://aipager.run"><img src="https://img.shields.io/badge/aipager.run-000000?style=flat-square" alt="aipager.run"></a>
 <!--RELEASES-->
+<sub>Latest release <strong>v0.5.0</strong> on 7 Aug 2026 &#183; 36 releases so far</sub>
 <!--/RELEASES-->
 
 **[dtach-bin](https://github.com/dev-aly3n/dtach-bin)**: the `dtach` binary packaged as
@@ -85,9 +86,9 @@ crowdlending protocol frontend on Arbitrum.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=a20b2cd4">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=a20b2cd4">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=a20b2cd4" alt="20,649 contributions (all time, since 2015), 105 repositories (76 mine, 29 external), 11 organizations (contributed to), 63 stars (earned), 9,964 downloads (PyPI, all time).">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=1f9f0217">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=1f9f0217">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=1f9f0217" alt="20,652 contributions (all time, since 2015), 105 repositories (76 mine, 29 external), 11 organizations (contributed to), 63 stars (earned), 9,964 downloads (PyPI, all time).">
   </picture>
 </p>
 
