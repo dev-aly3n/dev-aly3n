@@ -216,7 +216,7 @@ def last_week():
     """(contributions, repos) over the trailing 7 days, or None.
 
     A yearly total says someone was once busy. A 7-day figure says they are
-    working right now, which is the thing a visitor actually wants to know.
+    working right now, which is what a visitor is judging.
     """
     tok = os.environ.get("STATS_TOKEN")
     node = "viewer"
@@ -225,21 +225,25 @@ def last_week():
         node = f'user(login: "{USER}")'
     now = datetime.datetime.now(datetime.timezone.utc)
     frm = now - datetime.timedelta(days=7)
-    q = ('query { %s { contributionsCollection(from:"%s",to:"%s") { '
-         'contributionCalendar { totalContributions } '
-         'commitContributionsByRepository(maxRepositories:100) { repository { id } } } } }'
-         % (node, frm.strftime("%%Y-%%m-%%dT%%H:%%M:%%SZ"), now.strftime("%%Y-%%m-%%dT%%H:%%M:%%SZ")))
+    stamp = "%Y-%m-%dT%H:%M:%SZ"
+    q = (f'query {{ {node} {{ contributionsCollection('
+         f'from:"{frm.strftime(stamp)}",to:"{now.strftime(stamp)}") {{ '
+         f'contributionCalendar {{ totalContributions }} '
+         f'commitContributionsByRepository(maxRepositories:100) {{ repository {{ id }} }} '
+         f'}} }} }}')
     try:
         d = _post("https://api.github.com/graphql", {"query": q}, tok)
-        c = d["data"][node.split("(")[0]]["contributionsCollection"]
-        total = c["contributionCalendar"]["totalContributions"]
-        # Private repos are not enumerable on a read:user token, so the repo
-        # count is best-effort and omitted when it comes back empty.
-        repos = len(c.get("commitContributionsByRepository") or [])
-        return total, repos
     except Exception as e:
-        print(f"weekly window unavailable ({e})")
+        print(f"weekly window request failed: {e}")
         return None
+    if "errors" in d:
+        print(f"weekly window GraphQL error: {d['errors']}")
+        return None
+    c = d["data"][node.split("(")[0]]["contributionsCollection"]
+    # Private repos are not enumerable on a read:user token, so the repo count
+    # is best-effort and dropped when it comes back empty.
+    return (c["contributionCalendar"]["totalContributions"],
+            len(c.get("commitContributionsByRepository") or []))
 
 
 def releases(repo):
