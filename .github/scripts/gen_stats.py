@@ -394,7 +394,7 @@ def _sync_readme(cells):
         return
     text = original = readme.read_text()
 
-    assets = ["hero", "flow", "stack", "stats"] + [f"badge-{p}" for p in PACKAGES]
+    assets = ["hero", "stack", "stats"] + [f"badge-{p}" for p in PACKAGES]
     for asset in assets:
         blobs = b""
         for variant in ("dark", "light"):
@@ -417,13 +417,15 @@ def _sync_readme(cells):
 
     week = last_week()
     if week and week[0]:
-        total, repos = week
-        tail = f" across {repos} repositories" if repos else ""
+        total, _repos = week
+        # The repo count is deliberately not shown: read:user cannot enumerate
+        # private repositories, so it reported 3 against a much higher real
+        # figure. A wrong number is worse than no number.
         text = re.sub(r"(<!--WEEK-->).*?(<!--/WEEK-->)",
-                      lambda _m: f"<!--WEEK-->\n  <sub>Last 7 days: <strong>{total}</strong> "
-                                 f"contributions{tail}</sub>\n  <!--/WEEK-->",
+                      lambda _m: f"<!--WEEK-->\n  <sub>Last 7 days: "
+                                 f"<strong>{total}</strong> contributions</sub>\n  <!--/WEEK-->",
                       text, flags=re.S)
-        print(f"weekly line: {total} contributions / {repos} repos")
+        print(f"weekly line: {total} contributions")
 
     # Release recency, rewritten between markers. Thirty-plus releases is the
     # strongest available signal that the project is actively maintained, and a

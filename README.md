@@ -20,15 +20,6 @@
 
 <br>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=8f3a9f02">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-light.svg?v=8f3a9f02">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=8f3a9f02" alt="End to end: interface, services, data, infrastructure, ship.">
-  </picture>
-</p>
-
-<br>
 
 ### Building now
 
@@ -46,9 +37,9 @@ lending and protocol frontends.
 
 ### Open source
 
-**[aipager](https://github.com/dev-aly3n/aipager)**: remote control for your AI coding agent over
-Telegram. Run Claude Code detached, then read output, send prompts and approve permissions from
-your phone. Ships to PyPI, Homebrew, Nix and Docker.<br>
+**[aipager](https://github.com/dev-aly3n/aipager)** · Python · MIT<br>
+Remote control for your AI coding agent over Telegram. Run Claude Code detached, then read output,
+send prompts and approve permissions from your phone. Ships to PyPI, Homebrew, Nix and Docker.<br>
 <a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=6e2ec00f" alt="aipager on PyPI"></a>
 <img src="https://img.shields.io/badge/license-MIT-black?style=flat-square" alt="MIT license">
 <a href="https://aipager.run"><img src="https://img.shields.io/badge/aipager.run-000000?style=flat-square" alt="aipager.run"></a>
@@ -56,8 +47,9 @@ your phone. Ships to PyPI, Homebrew, Nix and Docker.<br>
 <sub>Latest release <strong>v0.5.0</strong> on 7 Aug 2026 &#183; 36 releases so far</sub>
 <!--/RELEASES-->
 
-**[dtach-bin](https://github.com/dev-aly3n/dtach-bin)**: the `dtach` binary packaged as
-platform-specific Python wheels, so `pip install` just works on Linux and macOS.<br>
+**[dtach-bin](https://github.com/dev-aly3n/dtach-bin)** · Python · GPL-2.0<br>
+The `dtach` binary packaged as platform-specific Python wheels, so `pip install` just works on
+Linux and macOS.<br>
 <a href="https://pypi.org/project/dtach-bin/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-dtach-bin.svg?v=ee989625" alt="dtach-bin on PyPI"></a>
 
 ### Selected work
