@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=d8d43e18">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-light.svg?v=d8d43e18">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=d8d43e18" alt="Aly Mohamadi, full-stack engineer. I build complete products, from the interface down to the infrastructure. Dubai, UAE. TypeScript, Python, Solidity. 10+ years shipping to production.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=03319fa1">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-light.svg?v=03319fa1">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=03319fa1" alt="Aly Mohamadi, full-stack engineer. I build complete products, from the interface down to the infrastructure. Dubai, UAE. TypeScript, Python, Solidity. 10+ years shipping to production.">
   </picture>
 </p>
 
@@ -16,9 +16,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=0a5570a5">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-light.svg?v=0a5570a5">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=0a5570a5" alt="End to end: interface, services, data, infrastructure, ship.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=8f3a9f02">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-light.svg?v=8f3a9f02">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=8f3a9f02" alt="End to end: interface, services, data, infrastructure, ship.">
   </picture>
 </p>
 
@@ -82,9 +82,9 @@ crowdlending protocol frontend on Arbitrum.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=c5eccc77">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=c5eccc77">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=c5eccc77" alt="20,633 contributions (all time, since 2015), 104 repositories (75 mine, 29 external), 11 organizations (contributed to), 63 stars (earned), 9,964 downloads (PyPI, all time).">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=dafda8cb">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=dafda8cb">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=dafda8cb" alt="20,641 contributions (all time, since 2015), 104 repositories (75 mine, 29 external), 11 organizations (contributed to), 63 stars (earned), 9,964 downloads (PyPI, all time).">
   </picture>
 </p>
 
