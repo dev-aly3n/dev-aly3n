@@ -96,8 +96,6 @@ crowdlending protocol frontend on Arbitrum.
 
 ### Contact
 
-I work across the whole stack: web, mobile, backend, blockchain and AI systems.
-Give me a hard problem and I will ship it.
+I build products and help teams build them.
 
-Best reached on [LinkedIn](https://www.linkedin.com/in/aly-mohamadi/) or
-[Telegram](https://t.me/aly3n).
+Reach me on [LinkedIn](https://www.linkedin.com/in/aly-mohamadi/) or [Telegram](https://t.me/aly3n).
