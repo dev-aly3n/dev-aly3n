@@ -155,6 +155,57 @@ def downloads():
     return total
 
 
+# Approximate advance widths for the badge font at 11px. Shields does the same
+# thing; exact metrics are not worth a browser dependency inside CI. Padding is
+# generous so a slight underestimate never clips the text.
+_NARROW = set("iljtfr.,:;'|! ")
+_WIDE = set("mwMW@")
+
+
+def _text_w(t):
+    return sum(4.0 if c in _NARROW else 9.2 if c in _WIDE else 6.7 for c in t)
+
+
+def badge(label, value, colour="#3775A9"):
+    """Self-hosted flat badge.
+
+    shields.io's pypi/dm endpoint intermittently renders the literal text
+    "rate limited by upstream service" onto the profile, so the dynamic PyPI
+    badges are generated here instead of fetched by the reader's browser.
+    """
+    lw, vw, h = _text_w(label) + 20, _text_w(value) + 20, 20
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{lw + vw:.0f}" height="{h}" role="img" aria-label="{label}: {value}">
+  <title>{label}: {value}</title>
+  <clipPath id="c"><rect width="{lw + vw:.0f}" height="{h}" rx="3" fill="#fff"/></clipPath>
+  <g clip-path="url(#c)">
+    <rect width="{lw:.0f}" height="{h}" fill="#555"/>
+    <rect x="{lw:.0f}" width="{vw:.0f}" height="{h}" fill="{colour}"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="{FONT}" font-size="11">
+    <text x="{lw / 2:.0f}" y="14">{label}</text>
+    <text x="{lw + vw / 2:.0f}" y="14" font-weight="600">{value}</text>
+  </g>
+</svg>
+'''
+
+
+def monthly(package):
+    """Downloads in the last 30 days, or None if pypistats is unreachable."""
+    try:
+        return _get(f"https://pypistats.org/api/packages/{package}/recent")["data"]["last_month"]
+    except (urllib.error.URLError, KeyError, ValueError) as e:
+        print(f"pypistats recent {package} unavailable ({e})")
+        return None
+
+
+def version(package):
+    try:
+        return _get(f"https://pypi.org/pypi/{package}/json")["info"]["version"]
+    except (urllib.error.URLError, KeyError, ValueError) as e:
+        print(f"pypi version {package} unavailable ({e})")
+        return None
+
+
 def human(n):
     if n >= 1_000_000:
         return f"{n / 1_000_000:.1f}M"
@@ -238,6 +289,24 @@ def main():
     if dl:
         cells.append((human(dl), "Downloads", "PyPI, all time"))
 
+    for pkg in PACKAGES:
+        v, m = version(pkg), monthly(pkg)
+        parts = [f"v{v}"] if v else []
+        if m:
+            parts.append(f"{human(m)}/month")
+        else:
+            # pypistats 429s intermittently. Rather than silently dropping the
+            # figure from the badge, reuse the last value we committed.
+            prev = OUT / f"badge-{pkg}.svg"
+            if prev.exists():
+                carried = re.search(r"(\S+/month)", prev.read_text())
+                if carried:
+                    parts.append(carried.group(1))
+                    print(f"  carried previous figure for {pkg}: {carried.group(1)}")
+        if parts:
+            (OUT / f"badge-{pkg}.svg").write_text(badge(pkg, " \u00b7 ".join(parts)))
+            print(f"badge-{pkg}.svg: {' / '.join(parts)}")
+
     for p in (DARK, LIGHT):
         (OUT / f"stats-{p['name']}.svg").write_text(render(p, cells))
     print("updated:", " | ".join(f"{v} {l}" for v, l, _ in cells))
@@ -258,16 +327,20 @@ def _sync_readme(cells):
         return
     text = original = readme.read_text()
 
-    for asset in ("hero", "flow", "stack", "stats"):
+    assets = ["hero", "flow", "stack", "stats"] + [f"badge-{p}" for p in PACKAGES]
+    for asset in assets:
         blobs = b""
         for variant in ("dark", "light"):
             p = OUT / f"{asset}-{variant}.svg"
             if p.exists():
                 blobs += p.read_bytes()
+        single = OUT / f"{asset}.svg"
+        if single.exists():
+            blobs += single.read_bytes()
         if not blobs:
             continue
         digest = hashlib.sha1(blobs).hexdigest()[:8]
-        text = re.sub(rf"(assets/{asset}-(?:dark|light)\.svg)\?v=[A-Za-z0-9]+",
+        text = re.sub(rf"(assets/{asset}(?:-(?:dark|light))?\.svg)\?v=[A-Za-z0-9]+",
                       rf"\1?v={digest}", text)
 
     alt = ", ".join(f"{v} {l.lower()} ({s})" for v, l, s in cells) + "."

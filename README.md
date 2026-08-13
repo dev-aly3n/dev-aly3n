@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/aly-mohamadi/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://t.me/aly3n"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <a href="https://pypi.org/project/aipager/"><img src="https://img.shields.io/pypi/dm/aipager?style=flat-square&label=aipager%20installs&color=3775A9&logo=pypi&logoColor=white" alt="aipager installs per month"></a>
+  <a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=1" alt="aipager on PyPI"></a>
 </p>
 
 <br>
@@ -44,15 +44,13 @@ lending and protocol frontends.
 **[aipager](https://github.com/dev-aly3n/aipager)**: remote control for your AI coding agent over
 Telegram. Run Claude Code in a detached terminal, then read output, send prompts and approve
 permission requests from your phone, with no SSH session left open.<br>
-<a href="https://pypi.org/project/aipager/"><img src="https://img.shields.io/pypi/v/aipager?style=flat-square&label=pypi&color=3775A9" alt="PyPI version"></a>
-<a href="https://pypi.org/project/aipager/"><img src="https://img.shields.io/pypi/dm/aipager?style=flat-square&label=installs%2Fmonth&color=3775A9" alt="Downloads per month"></a>
+<a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=1" alt="aipager on PyPI"></a>
 <img src="https://img.shields.io/badge/license-MIT-black?style=flat-square" alt="MIT license">
 <a href="https://aipager.run"><img src="https://img.shields.io/badge/aipager.run-000000?style=flat-square" alt="aipager.run"></a>
 
 **[dtach-bin](https://github.com/dev-aly3n/dtach-bin)**: the `dtach` binary packaged as
 platform-specific Python wheels, so `pip install` just works on Linux and macOS.<br>
-<a href="https://pypi.org/project/dtach-bin/"><img src="https://img.shields.io/pypi/v/dtach-bin?style=flat-square&label=pypi&color=3775A9" alt="PyPI version"></a>
-<a href="https://pypi.org/project/dtach-bin/"><img src="https://img.shields.io/pypi/dm/dtach-bin?style=flat-square&label=installs%2Fmonth&color=3775A9" alt="Downloads per month"></a>
+<a href="https://pypi.org/project/dtach-bin/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-dtach-bin.svg?v=1" alt="dtach-bin on PyPI"></a>
 
 ### Selected work
 
@@ -93,3 +91,11 @@ crowdlending protocol frontend on Arbitrum.
 <p align="center">
   <sub>Most of my work lives in private and organization repositories,<br>so the public graph shows only part of it.</sub>
 </p>
+
+<br>
+
+### Contact
+
+Best reached on [LinkedIn](https://www.linkedin.com/in/aly-mohamadi/) or
+[Telegram](https://t.me/aly3n). I take on cross-chain infrastructure, AI platforms, and
+frontend work with real engineering behind it.

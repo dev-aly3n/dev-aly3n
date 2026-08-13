@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="116" height="20" role="img" aria-label="aipager: v0.5.0">
+  <title>aipager: v0.5.0</title>
+  <clipPath id="c"><rect width="116" height="20" rx="3" fill="#fff"/></clipPath>
+  <g clip-path="url(#c)">
+    <rect width="62" height="20" fill="#555"/>
+    <rect x="62" width="55" height="20" fill="#3775A9"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11">
+    <text x="31" y="14">aipager</text>
+    <text x="89" y="14" font-weight="600">v0.5.0</text>
+  </g>
+</svg>
