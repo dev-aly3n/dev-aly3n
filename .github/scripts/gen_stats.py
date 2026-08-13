@@ -145,14 +145,27 @@ def stars():
 
 
 def downloads():
-    total = 0
+    """(all-time total, {package: last-30-days}).
+
+    Both figures come from the single /overall payload. The /recent endpoint
+    returns 429 far more often, and calling it separately meant the monthly
+    number kept vanishing while the all-time one succeeded.
+    """
+    total, recent = 0, {}
     for p in PACKAGES:
         try:
-            total += sum(x["downloads"]
-                         for x in _get(f"https://pypistats.org/api/packages/{p}/overall")["data"])
+            rows = _get(f"https://pypistats.org/api/packages/{p}/overall")["data"]
         except (urllib.error.URLError, KeyError, ValueError) as e:
             print(f"pypistats {p} unavailable ({e}); excluded from total")
-    return total
+            continue
+        # The payload carries two overlapping series, with_mirrors and
+        # without_mirrors. Summing the rows blindly double-counts: it reported
+        # 42,338 where the real figure is 9,964. without_mirrors is the honest
+        # one, excluding mirror and CI traffic, and matches what shields shows.
+        real = [x for x in rows if x.get("category") == "without_mirrors"]
+        total += sum(x["downloads"] for x in real)
+        recent[p] = sum(x["downloads"] for x in sorted(real, key=lambda x: x["date"])[-30:])
+    return total, recent
 
 
 # Approximate advance widths for the badge font at 11px. Shields does the same
@@ -187,15 +200,6 @@ def badge(label, value, colour="#3775A9"):
   </g>
 </svg>
 '''
-
-
-def monthly(package):
-    """Downloads in the last 30 days, or None if pypistats is unreachable."""
-    try:
-        return _get(f"https://pypistats.org/api/packages/{package}/recent")["data"]["last_month"]
-    except (urllib.error.URLError, KeyError, ValueError) as e:
-        print(f"pypistats recent {package} unavailable ({e})")
-        return None
 
 
 def version(package):
@@ -277,7 +281,7 @@ def render(p, cells):
 def main():
     commits, total_contrib, _ = contributions()
     star_count = stars()
-    dl = downloads()
+    dl, recent = downloads()
 
     cells = [
         (f"{total_contrib:,}", "Contributions", "all time, since 2015"),
@@ -290,7 +294,7 @@ def main():
         cells.append((human(dl), "Downloads", "PyPI, all time"))
 
     for pkg in PACKAGES:
-        v, m = version(pkg), monthly(pkg)
+        v, m = version(pkg), recent.get(pkg)
         parts = [f"v{v}"] if v else []
         if m:
             parts.append(f"{human(m)}/month")
