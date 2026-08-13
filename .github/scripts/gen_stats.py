@@ -211,6 +211,25 @@ def badge(label, value, colour="#3775A9"):
 '''
 
 
+def releases(repo):
+    """(latest tag, ISO date, total count) for a repo, or None on failure."""
+    try:
+        tok = os.environ.get("STATS_TOKEN") or os.environ.get("GITHUB_TOKEN", "")
+        req = urllib.request.Request(
+            f"https://api.github.com/repos/{repo}/releases?per_page=100",
+            headers={"Authorization": f"token {tok}", "User-Agent": f"{USER}-profile-stats"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            rows = json.load(r)
+        published = [x for x in rows if x.get("published_at")]
+        if not published:
+            return None
+        latest = max(published, key=lambda x: x["published_at"])
+        return latest["tag_name"], latest["published_at"][:10], len(rows)
+    except (urllib.error.URLError, KeyError, ValueError) as e:
+        print(f"releases {repo} unavailable ({e})")
+        return None
+
+
 def version(package):
     try:
         return _get(f"https://pypi.org/pypi/{package}/json")["info"]["version"]
@@ -360,6 +379,22 @@ def _sync_readme(cells):
     alt = alt.replace("&#38;", "and")
     text = re.sub(r'(<img src="[^"]*assets/stats-dark\.svg[^"]*" alt=")[^"]*(")',
                   lambda m: m.group(1) + alt + m.group(2), text)
+
+    # Release recency, rewritten between markers. Thirty-plus releases is the
+    # strongest available signal that the project is actively maintained, and a
+    # hardcoded version would contradict the badge within a week.
+    rel = releases("dev-aly3n/aipager")
+    if rel:
+        tag, date, count = rel
+        y, m, d = date.split("-")
+        month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                 "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][int(m) - 1]
+        line = (f"<sub>Latest release <strong>{tag}</strong> on {int(d)} {month} {y}"
+                f" &#183; {count} releases so far</sub>")
+        text = re.sub(r"(<!--RELEASES-->).*?(<!--/RELEASES-->)",
+                      lambda _m: f"<!--RELEASES-->\n{line}\n<!--/RELEASES-->",
+                      text, flags=re.S)
+        print(f"release line: {tag} / {date} / {count} releases")
 
     if text != original:
         readme.write_text(text)

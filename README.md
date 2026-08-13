@@ -46,6 +46,8 @@ your phone.<br>
 <a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=6e2ec00f" alt="aipager on PyPI"></a>
 <img src="https://img.shields.io/badge/license-MIT-black?style=flat-square" alt="MIT license">
 <a href="https://aipager.run"><img src="https://img.shields.io/badge/aipager.run-000000?style=flat-square" alt="aipager.run"></a>
+<!--RELEASES-->
+<!--/RELEASES-->
 
 **[dtach-bin](https://github.com/dev-aly3n/dtach-bin)**: the `dtach` binary packaged as
 platform-specific Python wheels, so `pip install` just works on Linux and macOS.<br>
