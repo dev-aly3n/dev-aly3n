@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=d8d43e18">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-light.svg?v=d8d43e18">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=d8d43e18" alt="Aly Mohamadi, full-stack engineer. Cross-chain DeFi infrastructure, AI platforms, and the interfaces on top. Dubai, UAE.">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=d8d43e18" alt="Aly Mohamadi, full-stack engineer. I build complete products, from the interface down to the infrastructure. Dubai, UAE. TypeScript, Python, Solidity. 10+ years shipping to production.">
   </picture>
 </p>
 
@@ -18,7 +18,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=0a5570a5">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-light.svg?v=0a5570a5">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=0a5570a5" alt="End to end: request, interface, services, chains, settlement.">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/flow-dark.svg?v=0a5570a5" alt="End to end: interface, services, data, infrastructure, ship.">
   </picture>
 </p>
 
