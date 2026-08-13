@@ -40,17 +40,22 @@ LIGHT = dict(name="light", card="#ffffff", stroke="#d8dee6", text="#111820",
 
 # Summed /languages bytes across the 90 repositories actually worked in: 61
 # owned non-fork plus 29 external repos with commits by this account. Counting
-# only owned repos was misleading, since the heaviest work lives in org repos:
-# it put CSS at 14.4% (inflated by 2021 practice projects) and hid Rust
-# entirely. Needs a repo-scoped token, so it is a constant rather than live.
+# only owned repos was misleading, since the heaviest code lives in org repos.
+#
+# Styling and markup are excluded (see SKIP below). They are not programming
+# languages and they bloat with generated files: CSS alone was showing 6.9%,
+# and 14.4% back when only owned repos were counted.
+#
+# Needs a repo-scoped token, so these are constants rather than live values.
 # Recompute occasionally; last measured 2026-08.
+# SKIP = CSS, SCSS, Sass, Less, HTML, MDX, Markdown, SVG, Vue, Handlebars, EJS, Pug
 LANGS = [
-    ("TypeScript", 62.9, "#3178c6"),
-    ("Python", 13.7, "#3572A5"),
-    ("CSS", 6.9, "#663399"),
-    ("JavaScript", 5.6, "#f1e05a"),
-    ("Solidity", 5.0, "#AA6746"),
-    ("Other", 5.9, None),
+    ("TypeScript", 69.5, "#3178c6"),
+    ("Python", 14.9, "#3572A5"),
+    ("JavaScript", 6.1, "#f1e05a"),
+    ("Solidity", 5.5, "#AA6746"),
+    ("Rust", 2.7, "#dea584"),
+    ("Other", 1.3, None),
 ]
 
 # Repo/org counts need a `repo`-scoped token to see private and org
