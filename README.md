@@ -26,16 +26,16 @@
 
 ### Building now
 
-**[iLayer](https://ilayer.io)** · Fullstack Engineer<br>
+**[iLayer](https://ilayer.io)** · Fullstack Engineer · Oct 2025 to now<br>
 Intent-based cross-chain execution layer on LayerZero V2. I work on both sides: the solver bot
 that quotes, fills and settles orders across Arbitrum, Base, Polygon, BSC and Ethereum, and the
 [swap interface](https://swap.ilayer.io) on top of it. Ported the solver from NestJS to
 Python/FastAPI for better async throughput.
 
-**[4PITCH](https://4pitch.com)** · Product &amp; Technical Advisor<br>
+**[4PITCH](https://4pitch.com)** · Product &amp; Technical Advisor · Feb 2025 to now<br>
 Helping shape a platform that turns static pitch decks into living startup profiles.
 
-**[Spila](https://www.spila.dev)** · Co-founder<br>
+**[Spila](https://www.spila.dev)** · Co-founder · since 2020<br>
 Frontend and full-stack delivery for web3 teams. Led teams of 4 to 5 engineers across DEX,
 lending and protocol frontends.
 
@@ -54,16 +54,19 @@ platform-specific Python wheels, so `pip install` just works on Linux and macOS.
 
 ### Selected work
 
-**[Xoul.ai](https://xoul.ai)**: AI character platform. Real-time chat over Socket.io, WebRTC voice
+**[Xoul.ai](https://xoul.ai)** · 2024 to 2025<br>
+AI character platform. Real-time chat over Socket.io, WebRTC voice
 calls with PCM streaming, voice cloning, and a media pipeline covering 10+ image and 4 video
 engines, plus the React Native webview app. Restructuring the architecture cut the bundle by
 **80%** and build times from **8 minutes to 2**.
 
-**[Kylix Finance](https://kylix.finance)**: cross-chain lending on Polkadot. Built the on-chain
+**[Kylix Finance](https://kylix.finance)** · 2024 to 2025<br>
+Cross-chain lending on Polkadot. Built the on-chain
 package with type-safe custom RPC calls and transaction hooks for supply, borrow, repay and
 liquidation bidding, inside a Turborepo monorepo. Also the 3D landing page in React Three Fiber.
 
-**Ithil and Wizardex**: led a five-person team delivering a fully on-chain orderbook DEX and a
+**Ithil and Wizardex** · 2023<br>
+Led a five-person team delivering a fully on-chain orderbook DEX and a
 crowdlending protocol frontend on Arbitrum.
 
 <sub>Earlier: frontend and freelance work, from Joomla sites through to Ethereum NFT platforms.</sub>

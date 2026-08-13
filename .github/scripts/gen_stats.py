@@ -54,9 +54,9 @@ LANGS = [
 # slowly, so they are constants. Recompute with a repo-scoped token via:
 #   GET /user/repos?affiliation=owner            -> REPOS_OWNED
 #   GET /repos/{full_name}/commits?author=USER   -> REPOS_EXTERNAL / ORGS
-# Last measured 2026-08: 75 owned (46 public, 29 private); 29 external repos
+# Last measured 2026-08: 76 owned (46 public, 30 private); 29 external repos
 # with commits across 11 owners.
-REPOS_OWNED = 75
+REPOS_OWNED = 76
 REPOS_EXTERNAL = 29
 ORGS = 11
 
