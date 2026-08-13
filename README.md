@@ -12,6 +12,11 @@
   <a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=6e2ec00f" alt="aipager on PyPI"></a>
 </p>
 
+<p align="center">
+  <!--WEEK-->
+  <!--/WEEK-->
+</p>
+
 <br>
 
 <p align="center">
@@ -42,7 +47,7 @@ lending and protocol frontends.
 
 **[aipager](https://github.com/dev-aly3n/aipager)**: remote control for your AI coding agent over
 Telegram. Run Claude Code detached, then read output, send prompts and approve permissions from
-your phone.<br>
+your phone. Ships to PyPI, Homebrew, Nix and Docker.<br>
 <a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=6e2ec00f" alt="aipager on PyPI"></a>
 <img src="https://img.shields.io/badge/license-MIT-black?style=flat-square" alt="MIT license">
 <a href="https://aipager.run"><img src="https://img.shields.io/badge/aipager.run-000000?style=flat-square" alt="aipager.run"></a>

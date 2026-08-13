@@ -15,6 +15,7 @@ would need a token with `repo` scope to see private repositories, and the
 distribution moves by fractions of a percent per month. Recompute it
 occasionally with the one-liner in LANGS' comment.
 """
+import datetime
 import hashlib
 import json
 import os
@@ -211,6 +212,36 @@ def badge(label, value, colour="#3775A9"):
 '''
 
 
+def last_week():
+    """(contributions, repos) over the trailing 7 days, or None.
+
+    A yearly total says someone was once busy. A 7-day figure says they are
+    working right now, which is the thing a visitor actually wants to know.
+    """
+    tok = os.environ.get("STATS_TOKEN")
+    node = "viewer"
+    if not tok:
+        tok = os.environ.get("GITHUB_TOKEN", "")
+        node = f'user(login: "{USER}")'
+    now = datetime.datetime.now(datetime.timezone.utc)
+    frm = now - datetime.timedelta(days=7)
+    q = ('query { %s { contributionsCollection(from:"%s",to:"%s") { '
+         'contributionCalendar { totalContributions } '
+         'commitContributionsByRepository(maxRepositories:100) { repository { id } } } } }'
+         % (node, frm.strftime("%%Y-%%m-%%dT%%H:%%M:%%SZ"), now.strftime("%%Y-%%m-%%dT%%H:%%M:%%SZ")))
+    try:
+        d = _post("https://api.github.com/graphql", {"query": q}, tok)
+        c = d["data"][node.split("(")[0]]["contributionsCollection"]
+        total = c["contributionCalendar"]["totalContributions"]
+        # Private repos are not enumerable on a read:user token, so the repo
+        # count is best-effort and omitted when it comes back empty.
+        repos = len(c.get("commitContributionsByRepository") or [])
+        return total, repos
+    except Exception as e:
+        print(f"weekly window unavailable ({e})")
+        return None
+
+
 def releases(repo):
     """(latest tag, ISO date, total count) for a repo, or None on failure."""
     try:
@@ -379,6 +410,16 @@ def _sync_readme(cells):
     alt = alt.replace("&#38;", "and")
     text = re.sub(r'(<img src="[^"]*assets/stats-dark\.svg[^"]*" alt=")[^"]*(")',
                   lambda m: m.group(1) + alt + m.group(2), text)
+
+    week = last_week()
+    if week and week[0]:
+        total, repos = week
+        tail = f" across {repos} repositories" if repos else ""
+        text = re.sub(r"(<!--WEEK-->).*?(<!--/WEEK-->)",
+                      lambda _m: f"<!--WEEK-->\n  <sub>Last 7 days: <strong>{total}</strong> "
+                                 f"contributions{tail}</sub>\n  <!--/WEEK-->",
+                      text, flags=re.S)
+        print(f"weekly line: {total} contributions / {repos} repos")
 
     # Release recency, rewritten between markers. Thirty-plus releases is the
     # strongest available signal that the project is actively maintained, and a
