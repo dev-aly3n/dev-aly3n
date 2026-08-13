@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/aly-mohamadi/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://t.me/aly3n"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=edc6d6a4" alt="aipager on PyPI"></a>
+  <a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=6e2ec00f" alt="aipager on PyPI"></a>
 </p>
 
 <br>
@@ -44,13 +44,13 @@ lending and protocol frontends.
 **[aipager](https://github.com/dev-aly3n/aipager)**: remote control for your AI coding agent over
 Telegram. Run Claude Code in a detached terminal, then read output, send prompts and approve
 permission requests from your phone, with no SSH session left open.<br>
-<a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=edc6d6a4" alt="aipager on PyPI"></a>
+<a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=6e2ec00f" alt="aipager on PyPI"></a>
 <img src="https://img.shields.io/badge/license-MIT-black?style=flat-square" alt="MIT license">
 <a href="https://aipager.run"><img src="https://img.shields.io/badge/aipager.run-000000?style=flat-square" alt="aipager.run"></a>
 
 **[dtach-bin](https://github.com/dev-aly3n/dtach-bin)**: the `dtach` binary packaged as
 platform-specific Python wheels, so `pip install` just works on Linux and macOS.<br>
-<a href="https://pypi.org/project/dtach-bin/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-dtach-bin.svg?v=fe39b2ef" alt="dtach-bin on PyPI"></a>
+<a href="https://pypi.org/project/dtach-bin/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-dtach-bin.svg?v=ee989625" alt="dtach-bin on PyPI"></a>
 
 ### Selected work
 
@@ -82,9 +82,9 @@ crowdlending protocol frontend on Arbitrum.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=dee90d08">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=dee90d08">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=dee90d08" alt="20,632 contributions (all time, since 2015), 104 repositories (75 mine, 29 external), 11 organizations (contributed to), 63 stars (earned), 42.3k downloads (PyPI, all time).">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=c5eccc77">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=c5eccc77">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=c5eccc77" alt="20,633 contributions (all time, since 2015), 104 repositories (75 mine, 29 external), 11 organizations (contributed to), 63 stars (earned), 9,964 downloads (PyPI, all time).">
   </picture>
 </p>
 
