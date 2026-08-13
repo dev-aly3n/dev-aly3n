@@ -38,15 +38,19 @@ LIGHT = dict(name="light", card="#ffffff", stroke="#d8dee6", text="#111820",
              muted="#6a7583", a1="#0969da", a2="#8250df", a3="#0d9488",
              other="#9aa4b2")
 
-# Summed /languages bytes across owned non-fork repos (public + private).
-# Refresh with a `repo`-scoped token when it feels stale; last taken 2026-08.
+# Summed /languages bytes across the 90 repositories actually worked in: 61
+# owned non-fork plus 29 external repos with commits by this account. Counting
+# only owned repos was misleading, since the heaviest work lives in org repos:
+# it put CSS at 14.4% (inflated by 2021 practice projects) and hid Rust
+# entirely. Needs a repo-scoped token, so it is a constant rather than live.
+# Recompute occasionally; last measured 2026-08.
 LANGS = [
-    ("TypeScript", 40.8, "#3178c6"),
-    ("Python", 23.5, "#3572A5"),
-    ("CSS", 17.0, "#663399"),
-    ("JavaScript", 7.3, "#f1e05a"),
-    ("Solidity", 6.3, "#AA6746"),
-    ("Other", 5.1, None),
+    ("TypeScript", 62.9, "#3178c6"),
+    ("Python", 13.7, "#3572A5"),
+    ("CSS", 6.9, "#663399"),
+    ("JavaScript", 5.6, "#f1e05a"),
+    ("Solidity", 5.0, "#AA6746"),
+    ("Other", 5.9, None),
 ]
 
 # Repo/org counts need a `repo`-scoped token to see private and org

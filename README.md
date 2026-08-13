@@ -27,10 +27,9 @@
 ### Building now
 
 **[iLayer](https://ilayer.io)** · Fullstack Engineer · Oct 2025 to now<br>
-Intent-based cross-chain execution layer on LayerZero V2. I work on both sides: the solver bot
-that quotes, fills and settles orders across Arbitrum, Base, Polygon, BSC and Ethereum, and the
-[swap interface](https://swap.ilayer.io) on top of it. Ported the solver from NestJS to
-Python/FastAPI for better async throughput.
+Intent-based cross-chain execution layer on LayerZero V2. I build both sides: the solver bot that
+quotes, fills and settles across five chains, and the [swap interface](https://swap.ilayer.io) on
+top of it. Ported the solver from NestJS to Python/FastAPI.
 
 **[4PITCH](https://4pitch.com)** · Product &amp; Technical Advisor · Feb 2025 to now<br>
 Helping shape a platform that turns static pitch decks into living startup profiles.
@@ -42,8 +41,8 @@ lending and protocol frontends.
 ### Open source
 
 **[aipager](https://github.com/dev-aly3n/aipager)**: remote control for your AI coding agent over
-Telegram. Run Claude Code in a detached terminal, then read output, send prompts and approve
-permission requests from your phone, with no SSH session left open.<br>
+Telegram. Run Claude Code detached, then read output, send prompts and approve permissions from
+your phone.<br>
 <a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=6e2ec00f" alt="aipager on PyPI"></a>
 <img src="https://img.shields.io/badge/license-MIT-black?style=flat-square" alt="MIT license">
 <a href="https://aipager.run"><img src="https://img.shields.io/badge/aipager.run-000000?style=flat-square" alt="aipager.run"></a>
@@ -55,15 +54,14 @@ platform-specific Python wheels, so `pip install` just works on Linux and macOS.
 ### Selected work
 
 **[Xoul.ai](https://xoul.ai)** · 2024 to 2025<br>
-AI character platform. Real-time chat over Socket.io, WebRTC voice
-calls with PCM streaming, voice cloning, and a media pipeline covering 10+ image and 4 video
-engines, plus the React Native webview app. Restructuring the architecture cut the bundle by
-**80%** and build times from **8 minutes to 2**.
+AI character platform. Real-time chat over Socket.io, WebRTC voice calls with PCM streaming, voice
+cloning, and a media pipeline covering 10+ image and 4 video engines, plus the React Native app.
+Restructuring the architecture cut the bundle **80%** and builds from **8 minutes to 2**.
 
 **[Kylix Finance](https://kylix.finance)** · 2024 to 2025<br>
-Cross-chain lending on Polkadot. Built the on-chain
-package with type-safe custom RPC calls and transaction hooks for supply, borrow, repay and
-liquidation bidding, inside a Turborepo monorepo. Also the 3D landing page in React Three Fiber.
+Cross-chain lending on Polkadot. Built the on-chain package: type-safe custom RPC calls and
+transaction hooks for supply, borrow, repay and liquidation bidding. Also the 3D landing page in
+React Three Fiber.
 
 **Ithil and Wizardex** · 2023<br>
 Led a five-person team delivering a fully on-chain orderbook DEX and a
