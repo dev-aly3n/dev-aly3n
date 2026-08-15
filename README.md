@@ -9,12 +9,12 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/aly-mohamadi/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://t.me/aly3n"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=43fd121d" alt="aipager on PyPI"></a>
+  <a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=df56671b" alt="aipager on PyPI"></a>
 </p>
 
 <p align="center">
   <!--WEEK-->
-  <sub>Last 7 days: <strong>334</strong> contributions</sub>
+  <sub>Last 7 days: <strong>371</strong> contributions</sub>
   <!--/WEEK-->
 </p>
 
@@ -40,7 +40,7 @@ lending and protocol frontends.
 **[aipager](https://github.com/dev-aly3n/aipager)** · Python · MIT<br>
 Remote control for your AI coding agent over Telegram. Run Claude Code detached, then read output,
 send prompts and approve permissions from your phone. Ships to PyPI, Homebrew, Nix and Docker.<br>
-<a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=43fd121d" alt="aipager on PyPI"></a>
+<a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=df56671b" alt="aipager on PyPI"></a>
 <img src="https://img.shields.io/badge/license-MIT-black?style=flat-square" alt="MIT license">
 <a href="https://aipager.run"><img src="https://img.shields.io/badge/aipager.run-000000?style=flat-square" alt="aipager.run"></a>
 <!--RELEASES-->
@@ -50,7 +50,7 @@ send prompts and approve permissions from your phone. Ships to PyPI, Homebrew, N
 **[dtach-bin](https://github.com/dev-aly3n/dtach-bin)** · Python · GPL-2.0<br>
 The `dtach` binary packaged as platform-specific Python wheels, so `pip install` just works on
 Linux and macOS.<br>
-<a href="https://pypi.org/project/dtach-bin/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-dtach-bin.svg?v=163dee6d" alt="dtach-bin on PyPI"></a>
+<a href="https://pypi.org/project/dtach-bin/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-dtach-bin.svg?v=e7fe04f2" alt="dtach-bin on PyPI"></a>
 
 ### Selected work
 
@@ -84,9 +84,9 @@ crowdlending protocol frontend on Arbitrum.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=8e40e763">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=8e40e763">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=8e40e763" alt="20,661 contributions (all time, since 2015), 105 repositories (76 mine, 29 external), 11 organizations (contributed to), 63 stars (earned), 9,981 downloads (PyPI, all time).">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=d87e8c56">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=d87e8c56">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=d87e8c56" alt="20,722 contributions (all time, since 2015), 105 repositories (76 mine, 29 external), 11 organizations (contributed to), 63 stars (earned), 9,997 downloads (PyPI, all time).">
   </picture>
 </p>
 
