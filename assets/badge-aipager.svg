@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="202" height="20" role="img" aria-label="aipager: v0.6.1 · 1,937/month">
-  <title>aipager: v0.6.1 · 1,937/month</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="202" height="20" role="img" aria-label="aipager: v0.6.1 · 1,805/month">
+  <title>aipager: v0.6.1 · 1,805/month</title>
   <clipPath id="c"><rect width="202" height="20" rx="3" fill="#fff"/></clipPath>
   <g clip-path="url(#c)">
     <rect width="62" height="20" fill="#555"/>
@@ -7,6 +7,6 @@
   </g>
   <g fill="#fff" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11">
     <text x="31" y="14">aipager</text>
-    <text x="132" y="14" font-weight="600">v0.6.1 · 1,937/month</text>
+    <text x="132" y="14" font-weight="600">v0.6.1 · 1,805/month</text>
   </g>
 </svg>
