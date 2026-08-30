@@ -14,7 +14,7 @@
 
 <p align="center">
   <!--WEEK-->
-  <sub>Last 7 days: <strong>739</strong> contributions</sub>
+  <sub>Last 7 days: <strong>740</strong> contributions</sub>
   <!--/WEEK-->
 </p>
 
@@ -50,7 +50,7 @@ send prompts and approve permissions from your phone. Ships to PyPI, Homebrew, N
 **[dtach-bin](https://github.com/dev-aly3n/dtach-bin)** · Python · GPL-2.0<br>
 The `dtach` binary packaged as platform-specific Python wheels, so `pip install` just works on
 Linux and macOS.<br>
-<a href="https://pypi.org/project/dtach-bin/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-dtach-bin.svg?v=9ab9bd0f" alt="dtach-bin on PyPI"></a>
+<a href="https://pypi.org/project/dtach-bin/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-dtach-bin.svg?v=ded9f45a" alt="dtach-bin on PyPI"></a>
 
 ### Selected work
 
@@ -84,9 +84,9 @@ crowdlending protocol frontend on Arbitrum.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=749809a9">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=749809a9">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=749809a9" alt="22,076 contributions (all time, since 2015), 105 repositories (76 mine, 29 external), 11 organizations (contributed to), 68 stars (earned), 11.5k downloads (PyPI, all time).">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=4004eb7d">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=4004eb7d">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=4004eb7d" alt="22,140 contributions (all time, since 2015), 105 repositories (76 mine, 29 external), 11 organizations (contributed to), 68 stars (earned), 11.5k downloads (PyPI, all time).">
   </picture>
 </p>
 
