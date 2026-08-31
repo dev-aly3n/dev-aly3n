@@ -14,7 +14,7 @@
 
 <p align="center">
   <!--WEEK-->
-  <sub>Last 7 days: <strong>740</strong> contributions</sub>
+  <sub>Last 7 days: <strong>803</strong> contributions</sub>
   <!--/WEEK-->
 </p>
 
@@ -84,9 +84,9 @@ crowdlending protocol frontend on Arbitrum.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=4004eb7d">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=4004eb7d">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=4004eb7d" alt="22,140 contributions (all time, since 2015), 105 repositories (76 mine, 29 external), 11 organizations (contributed to), 68 stars (earned), 11.5k downloads (PyPI, all time).">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=64e54048">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-light.svg?v=64e54048">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/stats-dark.svg?v=64e54048" alt="22,301 contributions (all time, since 2015), 105 repositories (76 mine, 29 external), 11 organizations (contributed to), 68 stars (earned), 3,464 downloads (PyPI, all time).">
   </picture>
 </p>
 
