@@ -23,10 +23,9 @@
 
 ### Building now
 
-**[iLayer](https://ilayer.io)** · Fullstack Engineer · Oct 2025 to now<br>
-Intent-based cross-chain execution layer on LayerZero V2. I build both sides: the solver bot that
-quotes, fills and settles across five chains, and the [swap interface](https://swap.ilayer.io) on
-top of it. Ported the solver from NestJS to Python/FastAPI.
+**Stealth startup** · CTO · May 2026 to now<br>
+Building a new company from zero: the product, the systems under it, the infrastructure, and the
+team. More when it launches.
 
 **[4PITCH](https://4pitch.com)** · Product &amp; Technical Advisor · Feb 2025 to now<br>
 Helping shape a platform that turns static pitch decks into living startup profiles.
@@ -54,10 +53,15 @@ Linux and macOS.<br>
 
 ### Selected work
 
+**[iLayer](https://ilayer.io)** · Fullstack Engineer · Oct 2025 to Apr 2026<br>
+Intent-based cross-chain execution layer on LayerZero V2. I built both sides: the solver bot that
+quotes, fills and settles across five chains, and the [swap interface](https://swap.ilayer.io) on
+top of it, plus the backend, servers and deployment pipeline. Ported the solver from NestJS to
+Python/FastAPI.
+
 **[Xoul.ai](https://xoul.ai)** · 2024 to 2026<br>
 AI character platform. Real-time chat over Socket.io, WebRTC voice calls with PCM streaming, voice
 cloning, and a media pipeline covering 10+ image and 4 video engines, plus the React Native app.
-Restructuring the architecture cut the bundle **80%** and builds from **8 minutes to 2**.
 
 **[Kylix Finance](https://kylix.finance)** · 2024 to 2025<br>
 Cross-chain lending on Polkadot. Built the on-chain package: type-safe custom RPC calls and
