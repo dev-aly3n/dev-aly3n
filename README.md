@@ -54,7 +54,7 @@ Linux and macOS.<br>
 
 ### Selected work
 
-**[Xoul.ai](https://xoul.ai)** · 2024 to 2025<br>
+**[Xoul.ai](https://xoul.ai)** · 2024 to 2026<br>
 AI character platform. Real-time chat over Socket.io, WebRTC voice calls with PCM streaming, voice
 cloning, and a media pipeline covering 10+ image and 4 video engines, plus the React Native app.
 Restructuring the architecture cut the bundle **80%** and builds from **8 minutes to 2**.
