@@ -68,7 +68,7 @@ Cross-chain lending on Polkadot. Built the on-chain package: type-safe custom RP
 transaction hooks for supply, borrow, repay and liquidation bidding. Also the 3D landing page in
 React Three Fiber.
 
-**Ithil and Wizardex** · 2023<br>
+**Ithil and Wizardex** · 2023 to 2024<br>
 Led a five-person team delivering a fully on-chain orderbook DEX and a
 crowdlending protocol frontend on Arbitrum.
 
