@@ -72,7 +72,7 @@ React Three Fiber.
 Led a five-person team delivering a fully on-chain orderbook DEX and a
 crowdlending protocol frontend on Arbitrum.
 
-<sub>Earlier: frontend and freelance work, from Joomla sites through to Ethereum NFT platforms.</sub>
+<sub>Earlier: eight years of independent web work for clients, from Joomla sites to Ethereum NFT platforms.</sub>
 
 ### Stack
 
