@@ -30,7 +30,7 @@ team. More when it launches.
 **[4PITCH](https://4pitch.com)** · Product &amp; Technical Advisor · Feb 2025 to now<br>
 Helping shape a platform that turns static pitch decks into living startup profiles.
 
-**[Spila](https://www.spila.dev)** · Co-founder · since 2020<br>
+**[Spila](https://www.spila.dev)** · Co-founder · 2020 to now<br>
 Frontend and full-stack delivery for web3 teams. Led teams of 4 to 5 engineers across DEX,
 lending and protocol frontends.
 
