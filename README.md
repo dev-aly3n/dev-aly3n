@@ -1,12 +1,13 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=03319fa1">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-light.svg?v=03319fa1">
-    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=03319fa1" alt="Aly Mohamadi, full-stack engineer. I build complete products, from the interface down to the infrastructure. Dubai, UAE. TypeScript, Python, Solidity. 10+ years shipping to production.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=24d86ac2">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-light.svg?v=24d86ac2">
+    <img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/hero-dark.svg?v=24d86ac2" alt="Aly Mohamadi, CTO at a stealth startup. I build complete products, from the interface down to the infrastructure. Dubai, UAE. TypeScript, Python, Solidity. 10+ years shipping to production.">
   </picture>
 </p>
 
 <p align="center">
+  <a href="https://aly3n.dev"><img src="https://img.shields.io/badge/aly3n.dev-1f6feb?style=flat-square" alt="aly3n.dev"></a>
   <a href="https://www.linkedin.com/in/aly-mohamadi/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://t.me/aly3n"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram"></a>
   <a href="https://pypi.org/project/aipager/"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/badge-aipager.svg?v=1bf7bfb2" alt="aipager on PyPI"></a>
@@ -20,6 +21,10 @@
 
 <br>
 
+<p align="center">
+  <a href="https://aly3n.dev"><img src="https://raw.githubusercontent.com/dev-aly3n/dev-aly3n/main/assets/aly3n-dev.jpg?v=492fb408" width="100%" alt="aly3n.dev: a 3D story of my work, from Dubai through ten teams in five countries, with a soundtrack composed live as you scroll."></a>
+  <sub><a href="https://aly3n.dev"><strong>aly3n.dev</strong></a>: my work as a 3D story you scroll through, with a soundtrack you play as you go.</sub>
+</p>
 
 ### Building now
 
@@ -104,4 +109,4 @@ crowdlending protocol frontend on Arbitrum.
 
 I build products and help teams build them.
 
-Reach me on [LinkedIn](https://www.linkedin.com/in/aly-mohamadi/) or [Telegram](https://t.me/aly3n).
+Reach me on [LinkedIn](https://www.linkedin.com/in/aly-mohamadi/) or [Telegram](https://t.me/aly3n), or take the tour at [aly3n.dev](https://aly3n.dev).
